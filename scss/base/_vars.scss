@@ -1,0 +1,202 @@
+/*============================================================================
+  Custom Vars
+==============================================================================*/
+
+
+
+
+
+
+
+// ==== Colors
+
+
+
+//-- Pri 
+$wht: #fff;
+$blk: #000;
+
+
+// Brand Colors
+$bodyBase: #f9f9fb ;
+$gGreen:   #62c184 ;
+$gBlue:    #2799d5 ; 
+$gPurp:    #4e4795 ;
+$gBlack:   #161e22 ;
+$gRed:     #e26f52 ;
+$footerText: #797c7d;
+
+$gTxt:     #7497a4 ;
+
+// Helper Colors
+$a: red;
+$b: #bada55;
+$c: blue;
+$d: yellow;
+
+// General colors
+$colorBody:      $bodyBase;
+$colorTextBody:  $gTxt;
+$colorHeaders:   $gTxt;
+
+// ==== Colors !
+
+
+
+/*============================================================================*/
+
+
+// ==== Type
+
+// Header Font
+$headerFontStack:  'open_sansregular';
+$headerFontWeight:  200;
+
+// Body Font
+$bodyFontStack: 'open_sansregular';
+$baseFontSize:  12px;
+
+// Navigation and Button Font
+$accentFontStackBold: 'open_sansregular';
+$accentFontWeight:     normal;
+
+// ==== Type !
+
+
+
+/*============================================================================
+  #Breakpoint and Grid Variables
+==============================================================================*/
+$viewportIncrement: 1px;
+
+$small: 480px;
+$medium: 768px;
+$large: 769px;
+
+$postSmall: $small + $viewportIncrement;
+$preMedium: $medium - $viewportIncrement;
+$preLarge: $large - $viewportIncrement;
+
+/*================ The following are dependencies of csswizardry grid ================*/
+$breakpoints: (
+  'small' '(max-width: #{$small})',
+  'medium' '(min-width: #{$postSmall}) and (max-width: #{$medium})',
+  'medium-down' '(max-width: #{$medium})',
+  'large' '(min-width: #{$large})'
+);
+
+$breakpoint-has-widths: ('small', 'medium', 'medium-down', 'large');
+$breakpoint-has-push:  ('medium', 'medium-down', 'large');
+$breakpoint-has-pull:  ('medium', 'medium-down', 'large');
+
+/*============================================================================
+  #General Variables
+==============================================================================*/
+
+// Supply Theme Colors
+$colorPrimary:   blue;
+$colorSecondary: #000;
+$colorAccent:    #000;
+
+// Button colors
+$colorBtnPrimary:       #000;
+$colorBtnPrimaryHover:  #000;
+$colorBtnPrimaryActive: #000;
+
+$colorBtnSecondary: #000;
+$colorBtnSecondaryHover: #000;
+$colorBtnSecondaryActive: #000;
+
+// Text link colors
+$colorLink: #000;
+$colorLinkHover:  #000;
+
+
+// Border colors
+$colorBorder:  #000;
+
+// Site Header
+$headerBackground:  #000;
+$headerText:  #000;
+$headerButtonAndSearch:  #000;
+
+// Nav background
+$colorNav:  #000;
+$colorNavText:  #000;
+
+// Mobile Nav Bar
+$mobileNavBarHeight: 50px;
+
+// Site Footer
+$colorFooterBg:  #000;
+$colorFooterText: #000;
+
+// Helper colors
+$disabledGrey: #f6f6f6;
+$disabledBorder: darken($disabledGrey, 25%);
+$errorRed: #dc0000;
+$errorRedBg: lighten($errorRed, 55%);
+$successGreen: #0a942a;
+
+// Width variables
+$siteWidth: 1060px;
+$gutter: 30px;
+$gridGutter: 30px;
+$maxWidthBp: $siteWidth + $gutter*2;
+
+// Radius
+$radius: 2px;
+
+// Password page
+$passwordPageUseBgImage: true;
+
+/*================ Typography ================*/
+
+/*============================================================================
+  Get font-families from theme settings
+==============================================================================*/
+// {% if settings.type_base_family contains 'Google' %}
+//   {% assign type_base_parts = settings.type_base_family | split: '_' %}
+//   {% assign type_base_name = type_base_parts[1] %}
+//   {% capture base_family %}"{{ type_base_name | split: ':' | first | replace: '+', ' ' }}"{% if type_base_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
+// {% else %}
+//   {% assign base_family = settings.type_base_family %}
+// {% endif %}
+
+// {% if settings.type_header_family contains 'Google' %}
+//   {% assign type_header_parts = settings.type_header_family | split: '_' %}
+//   {% assign type_header_name = type_header_parts[1] %}
+//   {% capture header_family %}"{{ type_header_name | split: ':' | first | replace: '+', ' ' }}"{% if type_header_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
+//   {% assign header_weight = type_header_parts[2] %}
+// {% else %}
+//   {% assign header_family = settings.type_header_family %}
+//   {% assign header_weight = 700 %}
+// {% endif %}
+
+// {% if settings.type_accent_family contains 'Google' %}
+//   {% assign type_accent_parts = settings.type_accent_family | split: '_' %}
+//   {% assign type_accent_name = type_accent_parts[1] %}
+//   {% capture accent_family %}"{{ type_accent_name | split: ':' | first | replace: '+', ' ' }}"{% if type_accent_parts.last == 'serif' %}, serif {% else %}, "HelveticaNeue", "Helvetica Neue", sans-serif{% endif %}{% endcapture %}
+//   {% assign accent_weight = type_accent_parts[2] %}
+// {% else %}
+//   {% assign accent_family = settings.type_accent_family %}
+//   {% assign accent_weight = 500 %}
+// {% endif %}
+
+
+
+// // Icons
+// @font-face {
+//   font-family: "icons";
+//   src: url('{{ 'icons.eot' | asset_url }}');
+//   src: url('{{ 'icons.eot' | asset_url }}#iefix') format("embedded-opentype"),
+//        url('{{ 'icons.woff' | asset_url }}') format("woff"),
+//        url('{{ 'icons.ttf' | asset_url }}') format("truetype"),
+//        url('{{ 'icons.svg' | asset_url }}#timber-icons') format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+$socialIconFontStack: 'icons';
+
+
+

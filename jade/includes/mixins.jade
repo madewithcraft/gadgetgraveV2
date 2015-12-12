@@ -1,0 +1,71 @@
+
+
+-var menu = { 'home': '/home', 'blog': '/blog', 'contact': '/contact' };
+
+
+-var social = { 'facebook': 'facebook.com',  'instagram': 'instagram.com', 'vimeo': 'vimeo.com' };
+
+
+//- moxy team social
+-var   socialJen = { 'facebook': 'facebook.com',  'instagram': 'instagram.com', 'vimeo': 'vimeo.com' };
+-var   socialWhy = { 'facebook': 'facebook.com',  'instagram': 'instagram.com', 'vimeo': 'vimeo.com' };
+-var socialCaleb = { 'facebook': 'facebook.com',  'instagram': 'instagram.com', 'vimeo': 'vimeo.com' };
+
+
+-var servicelist = ['zero', 'one', 'two'];
+
+
+
+
+
+
+//------------------------------------------------------------------------------ Create video touts
+
+mixin episode(href, thumbnail, episode, title)
+	.col-3(class="episode-" + "#{episode}")
+		a(href='#{href}')
+			.episode-thumb(class="#{thumbnail}")
+			.episode-copy
+				span.episode-number #{episode}
+				h4 #{title}
+				
+//------------------------------------------------------------------------------ +episode(href, thumbnail, episode, title)
+
+
+
+
+//------------------------------------------------------------------------------ Create socail nav
+
+mixin social(social)
+	ul(class="social")
+		each val, key in social
+			li
+				a(href=val, class='icon icon-#{key}')= key
+
+//------------------------------------------------------------------------------ +social(social)
+
+
+
+
+//------------------------------------------------------------------------------ Create Nav
+
+mixin nav(menu)
+	ul
+		each val, key in menu
+			li
+				a(href=val, title=key)= key
+
+//------------------------------------------------------------------------------ +nav(menu)
+
+
+
+//------------------------------------------------------------------------------ Create Services List
+
+
+mixin services(servicelist)
+	ul
+		each val in service-list
+			li= val
+
+//------------------------------------------------------------------------------ Create video touts
+

@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(){}function o(){}var a=$("#mobileNavTrig");a.on("click",function(c){c.prventDefault(),a.hasClass("open")?n():a.hasClass("closed")&&o()})});

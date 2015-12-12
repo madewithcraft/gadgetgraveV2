@@ -1,0 +1,894 @@
+// ==========================================================================
+
+// Base
+
+// ==========================================================================
+  
+// make everything border-box
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// smooth the fonts
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $bodyBase;
+	overflow-x: hidden;
+	color: $gTxt;
+}
+
+// strip the a tags
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+// stipr the ol/ul 
+ol, ul {
+	list-style: none;
+	display: block;
+}
+
+// Base
+// ======================================================================== !
+
+
+
+
+
+// ==========================================================================
+
+// Helpers
+
+// ==========================================================================
+
+
+//=== text
+
+// hide text
+.txt-hide {
+	display: block;
+	overflow: hidden;
+	text-indent: -999999999%;
+}
+
+
+// center the text
+.txt-center {
+	text-align: center;
+	margin: 0 auto;
+	padding: 80px 0;
+}
+
+
+//=== text !
+
+
+
+
+// =================| Box Model
+
+// block defauly
+.dis-b {
+	display: block;
+}
+
+// float left
+.fl-left {
+	float: left;
+}
+
+// float right
+.fl-right {
+	float: right;
+}
+
+// float in the center
+.fl-center {
+	margin: 0 auto;
+}
+
+// =================| Box Model
+
+
+
+//=== sudo
+
+// sudo obj
+.sudo {
+  position: relative;
+}
+
+// sudo obj here
+.sudo::before,
+.sudo::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+// after line
+.after-line::after {
+    height: 1px;
+    background: #FFF;
+    bottom: 35px;
+    width: 100%;
+    opacity: 0.05;
+}
+
+// testing sudos
+.sudo-border {
+  @extend .sudo;
+}
+
+// testing sudos
+.sudo-border::after {
+  height: 1px;
+  bottom: 0px;
+  left: 50%;
+}
+//=== sudo !
+
+// Helpers
+// ======================================================================== !
+
+
+
+
+
+
+
+// ==========================================================================
+
+// Objects
+
+// ==========================================================================
+
+
+//=== Wraps
+
+// gen wrapper element
+.wrap {
+	float: left;
+	display: block;
+	overflow: hidden !important;
+	width: 100%;
+}
+
+// center wrap
+.wrap-center {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+//=== Wraps !
+
+
+
+
+
+
+//=== sizing
+
+// pad 20px
+.small-pad-20 {
+	padding: 20px;
+}
+
+// max width 0f 500px
+.max-600 {
+	max-width: 600px;
+}
+
+// kill the padding on the row. This is used for the grid layouts and 
+// other layouts that already have indentation
+.row-kill-pad {
+	padding: 0;
+}
+
+//=== sizing !
+
+
+
+
+//=== Element BGs
+
+// white
+.bg-white {
+	background-color: $wht;
+}
+
+// white on the btn
+.bg-white .btn {
+	@include styleBtn(#fff, none, $gBlue);
+}
+
+//--- Sections | White !
+
+
+
+
+//--- Sections | Green
+
+// green
+.bg-green {
+	background-color: $gGreen;
+}
+
+// btns in the green bgs sections
+.bg-green .btn {
+	@include styleBtn(#fff, none, $gBlue);
+}
+
+//--- Sections | Green !
+
+
+
+//--- Sections | Purple
+
+// purple
+.bg-purp {
+	background-color: $gPurp;
+}
+
+// btns in the purp bgs sections
+.bg-purp .btn {
+	@include styleBtn(#fff, none, $gBlue);
+}
+
+//--- Sections | Purple !
+
+
+
+
+//--- Sections | Black
+
+// black
+.bg-black {
+	background-color: $gBlack;
+}
+
+
+// btns in the purp bgs sections
+.bg-black .btn {
+	@include styleBtn(#fff, none, $gBlue);
+}
+
+//--- Sections | Black !
+
+
+//--- Sections | Red
+
+// red
+.bg-red {
+	background-color: $gRed;
+}
+
+// btns in the purp bgs sections
+.bg-black .btn {
+	@include styleBtn(#fff, none, $gBlue);
+}
+
+//--- Sections | Red !
+
+
+//--- Sections | Blue
+.bg-blue {
+	background-color: $gBlue;
+	background-image: -moz-linear-gradient( 124deg, rgb(36,175,219) 0%, rgb(26,156,205) 100%);
+	background-image: -webkit-linear-gradient( 124deg, rgb(36,175,219) 0%, rgb(26,156,205) 100%);
+	background-image: -ms-linear-gradient( 124deg, rgb(36,175,219) 0%, rgb(26,156,205) 100%);
+}
+
+// button on blue bg
+.bg-blue .btn {
+	@include styleBtn(#fff, none, $gBlue);
+}
+//--- Sections | Blue !
+
+//=== Element BGs !
+
+
+
+
+//=== Element BG Text Overides 
+
+// these are the overides for all the text on a dark bg
+
+// direct children of blue
+.bg-blue > *,
+
+// direct children of black
+.bg-black > *,
+
+// direct children of purp
+.bg-purp > *,
+
+// direct children of green
+.bg-green > *, 
+.bg-green .txt-wrap > *,
+
+// direct children of green
+.bg-red > * {
+	// importand to overide everything
+	color: #fff !important;	
+}
+
+// these are the overides for all the text on a light bg
+.bg-white * {
+	color: $gTxt;	
+}
+
+//=== Element BG Text Overides  !
+
+
+
+//=== Sprites
+
+// svg sprite
+.sprite {
+	background: transparent url('img/svg-sprite.svg') no-repeat 0px 0px;
+	background-size: 194px 67px;
+}
+
+//=== Sprites !
+
+
+
+
+//=== Icons
+
+// gen icon
+.icon {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-indent: -999999px;
+	width: 50px;
+	height: 50px;
+}
+
+// the actual icon itself
+.icon::before {
+	content: "";
+	@extend .sprite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin: -10px 0px 0px -10px;
+}
+
+
+// mag
+.icon-mag::before {
+	background-position: -53px -9px;
+}
+
+// cart
+.icon-shop::before {
+	background-position: -53px -9px;
+}
+
+// phone
+.icon-phones::before {
+	background-position: -73px -9px;
+}
+
+// facebook
+.icon-facebook::before  {
+	background-position: -47px -27px;
+}
+
+// twitter
+.icon-twitter:hover::before {
+	background-position: -47px -45px;
+}  
+
+//=== Icons !
+
+
+
+
+
+//=== Cards
+
+
+// this is the shared style for the card 
+.card {
+	@extend .bg-white; // default bg color of white
+	@extent .shadow; // give the shadow to the bottom of the card
+	padding: 50px 35px 40px;
+	margin-bottom: 20px;
+}
+
+//=== Cards !
+
+
+
+
+
+
+
+
+.half {
+	width: 50%;
+	float: left;
+}
+
+
+
+// ==== Obj !
+
+
+
+
+// ==========================================================================
+
+// Global Elements
+
+// ==========================================================================
+  
+
+// global logo obj
+.g-logo {
+	width: 48px;
+	height: 100px;
+}
+
+
+
+
+// ==== Header
+
+
+
+// global header el
+.g-header {
+	position: relative;
+	height: 88px;
+
+	.g-logo {
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		margin-left: -24px;
+	}
+}
+
+
+.g-phone {
+	width: 50px;
+	height: 50px;
+}
+
+
+.nav-trig {
+	height: 35px;
+	width: 25px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+
+	span,
+	span::before,
+	span::after {
+		overflow: visible;
+  		display: block;
+  		position: absolute;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		left: 0;
+		background-color: $wht;
+	}
+
+	span::before,
+	span::after {
+		content: "";
+		position: absolute !important;
+		background-color: $wht;
+	}
+
+	span {
+		top: 50%;
+	}
+
+	span::before {
+		top: 6px;
+	}
+
+	span::after {
+		top: -6px;
+	}
+
+
+}
+
+.g-header-wrap-right {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 100px;
+
+
+	.icon {
+		float: left;
+		display: block;
+	}
+
+}
+
+// ==== Header !
+
+
+
+
+
+
+// ==== Heros
+
+.hero {
+	// background-color: $gBlue;
+	padding: 50px 15px;
+}
+
+
+// ==== Heros !
+
+
+
+
+// ==== Heros
+
+.hero-pop-over {
+	margin-top: -40px;
+	padding: 30px 30px;
+	overflow: hidden;
+}
+
+.shadow {
+	@include border-radius(4px);
+	box-shadow: 0px 1px 0px 0px rgba(237, 237, 243, 0.6);
+}
+
+
+// ==== Heros !
+
+
+
+
+.non-mobile {
+	display: none !important;
+}
+
+
+
+
+
+
+// ==========================================================================
+
+// Buttons
+
+// ==========================================================================
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 10px 30px;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	@include font-size (14);
+	@include border-radius(50px);
+	background-color: $gBlue;
+	color: #fff;
+}
+
+// outline btn
+.btn-outline {
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	overflow: hidden;
+	background-color: transparent;
+}
+
+
+// ==========================================================================
+
+// Buttons
+
+// ==========================================================================
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 2rem;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+
+
+h1 {
+	@include font-size(35);
+	@include font-lh(40);
+}
+
+h2 {
+	@include font-size(25);
+}
+
+h3 {
+	@include font-size(20);
+}
+
+
+p {
+	@include font-size(13);
+	font-family: 'open_sansregular';
+}
+
+ul.small ,
+ul.small li,
+ul.small a {
+	@include font-size(13);
+	font-family: 'open_sansregular';
+}
+
+
+
+
+
+.brands-we-support ul {
+	width: 33.3333333%;
+	float: left;
+	text-align: center;
+}
+
+
+
+
+// ==========================================================================
+
+// Type
+
+// ==========================================================================
+
+
+
+.small-txt-center {
+	text-align: center;
+}
+
+
+.half-full-section {
+	position: relative;
+}
+
+.half-full-section .bg-purp {
+	position: relative;
+	z-index: 1;
+}
+
+
+.half-full-section .bg-purp.bg-half {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	top: 0px;
+	right: 0px;
+	z-index: 0;
+}
+
+.wrap-featured-products .wrap {
+	padding: 0 0 20px;
+}
+
+.wrap-featured-products .three {
+	@extend .shadow;
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.product-item {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	@extend .shadow;
+	background-color: #fff;
+	margin: 40px 0;
+}
+
+
+.product-image {
+	width: 100%;
+	background-color: red;
+	height: 200px;
+}
+
+
+.product-txt {
+	padding: 20px;
+	text-align: center;
+}
+
+
+.product-txt  h3 {
+	@include font-lh(30);
+}
+
+.product-price {
+	@include font-size(26);	
+	font-weight: 600;
+	color: #1c8fca;
+	padding: 0 3px;
+}
+
+.product-price .product-price-super {
+	@include font-size(16);	
+}
+
+.txt-under-line {
+	text-decoration: underline;
+}
+
+
+.full {
+	float: left;
+	width: 100%;
+	display: block;
+}
+
+
+// ==========================================================================
+
+// Slabs
+
+// ==========================================================================
+
+
+
+.slab {
+	padding: 50px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+
+
+/* 
+    font-family: 'open_sanslight';
+    font-family: 'open_sansregular';
+    font-family: 'open_sanssemibold';
+*/
+
+
+// ==========================================================================
+
+// Footer
+
+// ==========================================================================
+
+
+
+.g-footer {
+	background: $gBlack;
+	padding-top: 30px;
+
+	ul.fl-left li {
+    	float: left;
+    	display: inline-block;
+    	padding: 20px;
+    	@include font-size(15);
+    	color: white;
+
+	    a {
+	    	color: white;
+	    	@include font-size(15);
+	    }
+
+	}
+		
+	h1 {
+		color: white;
+		@include font-size(18);
+	}
+		a {
+			color: $footerText;
+			@include font-size(12);
+			text-decoration: none;
+		}
+		a:hover {
+			color: white;
+		}
+		.copyright {
+			text-align: center;
+			color: #2b3134;
+			@include font-size(10);
+		}
+
+}
+
+
+
+.display-product {
+	border-radius: 4px;
+}
+
+
+.display-product .wrap-display-img {
+	background-color: red;
+	height: 100%;
+	min-height: 300px;
+}
+
+
+
+.display-product .wrap-display-txt {
+	background-color: green;
+}
+
+.display-product .wrap-display-form {
+	background-color: blue;
+	min-width: 100%;
+	min-height: 50px;
+}
+
+
+
+
+.pos-rel {
+	position: relative;
+}
+
+$img-path: 'img/';
+
+
+.gg-cell-box {
+	width: 795px;
+    height: 610px;
+    position: absolute;
+    right: -250px;
+    top: 220px;
+	background: transparent url($img-path + 'gadget-grave-replace-phone-box.png') no-repeat 0px 0px;
+}
+
+.index-slab-gg-box {
+	height: 500px;
+}
+
+
+
+
+
+
+
+
