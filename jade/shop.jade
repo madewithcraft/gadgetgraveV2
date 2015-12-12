@@ -1,0 +1,128 @@
+//- data / logic 
+include includes/logic.jade 
+doctype
+html.no-js
+
+
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		include includes/heads/head-home.jade
+
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='style.css')
+
+		link(rel="apple-touch-icon" href="../img/apple-touch-icon.png")
+		link(rel="shortcut icon" type="image/png" href="/favicon.png")
+
+		
+
+	body.home
+		<!--[if lt IE 8]>
+		| p.browsehappy
+		| You are using an <strong>outdated</strong> browser.
+		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		| to improve your experience.
+		<![endif]-->
+
+
+	
+//- start content
+.container.bg-blue
+
+	//- g navagation
+	.menu-wrap.row
+		.menu-side
+			+navHeader
+
+
+
+
+	.content-wrap
+		.content.bg-blue.sudo
+
+			//- header
+			header.g-header
+				.center
+					h1.g-logo.sprite
+						p
+							a.txt-hide(href="#") Gadget Grave
+
+					button.menu-button#open-button
+						span
+
+
+
+
+
+				.g-header-wrap-right
+					a#searchTrig.icon.icon-mag(href="#") Search
+					a#cartTrig.icon.icon-shop.non-mobile(href="#") My Shopping Cart
+					a#phoneTrig.dis-b.g-phone.icon.icon-phones(href="#", tel="#")
+						span (000) 000-0000
+			//- header !
+
+
+			//- hero
+			.hero.row.bg-blue.bg-blue
+				.wrap-center
+					h1 Page Shop
+					ul
+						li 
+							a(href="#") LCD Repair
+						li 
+							a(href="#") Touch Screens
+						li 
+							a(href="#") Battery Replacement
+						li 
+							a(href="#") Button Issues
+						li 
+							a(href="#") Camera Issues
+						li 
+							a(href="#") Virus Removal
+						li 
+							a(href="#") Upgrades / Optimization
+					a.btn.btn-outline(href="#") Learn More
+			//- hero !
+
+
+
+
+			
+
+
+			.row.bg-white.slab.index-slab-gg-box
+				.center
+					.wrap-txt.five.columns
+						h2 Egestas Tristique Venenatis
+						p Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+						a.btn.btn-outline(href="#") nothing but btn
+					.wrap-img.gg-cell-box
+
+
+
+			//- featured products
+			include includes/products-featured.jade
+
+			//- footer
+			include includes/footer.jade
+
+
+
+script(src='js/classie.js')
+script(src='js/main.js')
+
+
+
+
+
+
+
+
+
+
+
+
+
+

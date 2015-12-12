@@ -1,0 +1,53 @@
+-
+	var navHeaderLinks = [ 
+	  	{
+	    	name: 'Repair',
+	    	link: 'Users/caleb/Desktop/gadgetgraveV2/_site/repair.html'
+	  	},
+	  	{ 
+	  		name: 'Replace', 
+	  		link: 'Users/caleb/Desktop/gadgetgraveV2/_site/replace.html' 
+	  	},
+	  	{ 
+	  		name: 'Sell', 
+	  		link: 'Users/caleb/Desktop/gadgetgraveV2/_site/sell.html' 
+	  	},
+	  	{ 
+	  		name: 'Shop', 
+	  		link: 'Users/caleb/Desktop/gadgetgraveV2/_site/shop.html' 
+	  	},
+	  	{ 
+	  		name: 'About', 
+	  		link: 'Users/caleb/Desktop/gadgetgraveV2/_site/about.html' 
+	  	},
+	  	{ 
+	  		name: 'Blog', 
+	  		link: 'Users/caleb/Desktop/gadgetgraveV2/_site/' 
+	  	},
+	  	{ 
+	  		name: 'Contact', 
+	  		link: 'Users/caleb/Desktop/gadgetgraveV2/_site/contact.html' 
+	  	},
+	  	{ 
+	  		name: 'Locations', 
+	  		link: 'Users/caleb/Desktop/gadgetgraveV2/_site/locations.html' 
+	  	}
+	];
+
+
+
+
+
+
+mixin navHeader
+	nav
+		ul
+			-each post in navHeaderLinks
+				li
+					a(href="/#{post.link}") #{post.name}
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+-
+	var navHeaderLinks = [ 
+	  	{
+	    	name: 'Repair',
+	    	link: 'repair.html'
+	  	},
+	  	{ 
+	  		name: 'Replace', 
+	  		link: 'replace.html' 
+	  	},
+	  	{ 
+	  		name: 'Sell', 
+	  		link: 'sell.html' 
+	  	},
+	  	{ 
+	  		name: 'Shop', 
+	  		link: 'shop.html' 
+	  	},
+	  	{ 
+	  		name: 'About', 
+	  		link: 'about.html' 
+	  	},
+	  	{ 
+	  		name: 'Blog', 
+	  		link: '/' 
+	  	},
+	  	{ 
+	  		name: 'Contact', 
+	  		link: 'contact.html' 
+	  	},
+	  	{ 
+	  		name: 'Locations', 
+	  		link: 'locations.html' 
+	  	}
+	];
+
+
+
+
+
+
+mixin navHeader
+	nav
+		ul
+			-each post in navHeaderLinks
+				li
+					a(href="/#{post.link}") #{post.name}
+
+
+
+
+
+
