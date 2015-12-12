@@ -1,0 +1,245 @@
+html, 
+body, 
+.container, 
+.content-wrap {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	position: relative;
+	// background: #1894c3;
+}
+
+.container::before {
+	@extend .sudo;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .03);
+}
+
+// .menu-wrap a {
+// 	color: #b8b7ad;
+// }
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+	color: #c94e50;
+}
+
+.content-wrap {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.content {
+	position: relative;
+	background: #b4bad2;
+}
+
+/* Overlay */
+.content::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
+	transition: opacity 0.3s, transform 0s 0.3s;
+}
+
+
+
+// .content {
+// 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+// }
+
+
+
+
+
+/* Menu Button */
+.menu-button {
+
+	height: 35px;
+	width: 24px;
+	top: 0px;
+	left: 0px;
+
+
+
+	position: fixed;
+	z-index: 1000;
+	margin: 1em;
+	padding: 0;
+	//width: 2.5em;
+	//height: 2.25em;
+	border: none;
+	text-indent: 2.5em;
+	font-size: 1.5em;
+	color: transparent;
+	background: transparent;
+	// -webkit-transition: -webkit-transform 0.3s;
+	// transition: transform 0.3s;
+
+
+
+
+	span,
+	span::before,
+	span::after {
+		overflow: visible;
+  		display: block;
+  		position: absolute;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		left: 0;
+		background-color: $wht;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .25s ease-in-out;
+		-moz-transition: .25s ease-in-out;
+		-o-transition: .25s ease-in-out;
+		transition: .25s ease-in-out;
+	}
+
+	span::before,
+	span::after {
+		content: "";
+		position: absolute !important;
+		background-color: $wht;
+	}
+
+	span {
+		top: 50%;
+	}
+
+	span::before {
+		top: 6px;
+	}
+
+	span::after {
+		top: -6px;
+	}
+
+}
+
+.open span {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.open span::before {
+	-webkit-transform: translate(-1px, -5px) rotate(135deg);
+	-moz-transform: translate(-1px, -5px) rotate(135deg);
+	-o-transform: translate(-1px, -5px) rotate(135deg);
+	transform: translate(-1px, -5px) rotate(135deg);
+
+	// -webkit-transform: translate(10px,10px,0);
+	// transform: translate(10px,10px,0);
+}
+
+.open span::after {
+	-webkit-transform: translate(0px, 7px) rotate(-135deg);
+	-moz-transform: translate(0px, 7px) rotate(-135deg);
+	-o-transform: translate(0px, 7px) rotate(-135deg);
+	transform: translate(0px, 7px) rotate(-135deg);
+}
+
+
+// .menu-button::before {
+// 	position: absolute;
+// 	top: 0.5em;
+// 	right: 0.5em;
+// 	bottom: 0.5em;
+// 	left: 0.5em;
+// 	background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+// 	content: '';
+// }
+
+.menu-button:hover {
+	opacity: 0.6;
+}
+/* Menu */
+.menu-wrap {
+	position: absolute;
+	font-weight: 700;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.menu-top {
+	line-height: 58px;
+}
+
+.menu-top .profile {
+	display: inline-block;
+	padding: 8px 10px;
+	line-height: 42px;
+}
+
+.menu-top .profile,
+.menu-side {
+	width: 300px;
+}
+
+.menu-top .profile img {
+	float: left;
+	margin-right: 1em;
+}
+
+.icon-list {
+	display: inline-block;
+	font-size: 1.25em;
+}
+
+.icon-list a {
+	margin: 0 1em 0 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 32em) {
+	.icon-list {
+		padding-left: 1em;
+	}
+}
+
+.menu-side a {
+	display: block;
+	padding: 1.2em;
+	border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.menu-side a:first-child {
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Shown menu */
+.show-menu .menu-wrap {
+	opacity: 1;
+}
+
+.show-menu .content-wrap {
+	-webkit-transform: translate3d(300px,60px,0);
+	transform: translate3d(300px,60px,0);
+}
+
+// .show-menu .content::before {
+// 	opacity: 1;
+// 	-webkit-transition: opacity 0.3s;
+// 	transition: opacity 0.3s;
+// 	-webkit-transform: translate3d(0,0,0);
+// 	transform: translate3d(0,0,0);
+// }

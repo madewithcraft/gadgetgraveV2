@@ -387,6 +387,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/js\/classie.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/js\/classie.js",
+		"outputAbbreviatedPath": "\/_site\/js\/min\/classie-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_site\/js\/default.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -436,6 +447,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/landing.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/menu.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/menu.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -529,6 +549,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/jade\/menu.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade\/menu.jade",
+		"outputAbbreviatedPath": "\/_site\/menu.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/jade\/pdp.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -572,6 +603,15 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/scss\/_site\/menu.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/_site\/menu.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/scss\/base\/_assets.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -597,6 +637,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/base\/_custom.scss",
 		"outputAbbreviatedPath": "\/scss\/_site\/_custom.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/base\/_menu.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/base\/_menu.scss",
+		"outputAbbreviatedPath": "\/scss\/_site\/_menu.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -716,7 +772,7 @@
 			"flagValue": -1
 			},
 		"camel_case_classes": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"colon_assignment_spacing": {
@@ -728,7 +784,7 @@
 			"flagValue": 10
 			},
 		"duplicate_key": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"empty_constructor_needs_parens": {
@@ -736,7 +792,7 @@
 			"flagValue": -1
 			},
 		"ensure_comprehensions": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -891,7 +947,7 @@
 			"flagValue": -1
 			},
 		"bitwise": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"boss": {
@@ -915,7 +971,7 @@
 			"flagValue": -1
 			},
 		"curly": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"debug": {
@@ -931,11 +987,11 @@
 			"flagValue": -1
 			},
 		"elision": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqeqeq": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqnull": {
@@ -963,7 +1019,7 @@
 			"flagValue": -1
 			},
 		"freeze": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"funcscope": {
@@ -995,7 +1051,7 @@
 			"flagValue": -1
 			},
 		"jquery": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"lastsemic": {
@@ -1003,7 +1059,7 @@
 			"flagValue": -1
 			},
 		"latedef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"laxbreak": {
@@ -1055,11 +1111,11 @@
 			"flagValue": -1
 			},
 		"newcap": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"noarg": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"nocomma": {
@@ -1079,7 +1135,7 @@
 			"flagValue": -1
 			},
 		"nonew": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"nonstandard": {
@@ -1119,7 +1175,7 @@
 			"flagValue": -1
 			},
 		"regexp": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"rhino": {
@@ -1159,11 +1215,11 @@
 			"flagValue": -1
 			},
 		"undef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"varstmt": {
@@ -1193,7 +1249,7 @@
 			"flagValue": -1
 			},
 		"browser": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"couch": {
