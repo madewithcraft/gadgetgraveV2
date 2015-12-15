@@ -70,10 +70,12 @@ body,
 /* Menu Button */
 .menu-button {
 
-	height: 35px;
-	width: 24px;
-	top: 0px;
-	left: 0px;
+	height: 88px;
+	width: 88px;
+	top: -23px;
+	left: -23px;
+	background-color: $gBlue;
+	border-radius: 0;
 
 
 
@@ -87,7 +89,6 @@ body,
 	text-indent: 2.5em;
 	font-size: 1.5em;
 	color: transparent;
-	background: transparent;
 	// -webkit-transition: -webkit-transform 0.3s;
 	// transition: transform 0.3s;
 
@@ -100,10 +101,11 @@ body,
 		overflow: visible;
   		display: block;
   		position: absolute;
-		width: 100%;
+		width: 30px;
 		height: 1px;
 		position: absolute;
-		left: 0;
+		left: 50%;
+		margin-left: -15px;
 		background-color: $wht;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
@@ -222,9 +224,9 @@ body,
 	border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.menu-side a:first-child {
-	border-top: 1px solid rgba(0,0,0,0.1);
-}
+// .menu-side a:first-child {
+// 	border-top: 1px solid rgba(0,0,0,0.1);
+// }
 
 /* Shown menu */
 .show-menu .menu-wrap {
@@ -232,8 +234,8 @@ body,
 }
 
 .show-menu .content-wrap {
-	-webkit-transform: translate3d(300px,60px,0);
-	transform: translate3d(300px,60px,0);
+	-webkit-transform: translate3d(300px,0,0);
+	transform: translate3d(300px,0,0);
 }
 
 // .show-menu .content::before {
@@ -243,3 +245,6 @@ body,
 // 	-webkit-transform: translate3d(0,0,0);
 // 	transform: translate3d(0,0,0);
 // }
+
+
+

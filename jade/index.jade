@@ -57,33 +57,41 @@ html.no-js
 
 
 				.g-header-wrap-right
-					a#searchTrig.icon.icon-mag(href="#") Search
-					a#cartTrig.icon.icon-shop.non-mobile(href="#") My Shopping Cart
-					a#phoneTrig.dis-b.g-phone.icon.icon-phones(href="#", tel="#")
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
 						span (000) 000-0000
 			//- header !
 
 
 			//- hero
-			.hero.row.bg-blue.bg-blue
-				.wrap-center
-					h1 Gadgets We Repair
-					ul
-						li 
-							a(href="#") LCD Repair
-						li 
-							a(href="#") Touch Screens
-						li 
-							a(href="#") Battery Replacement
-						li 
-							a(href="#") Button Issues
-						li 
-							a(href="#") Camera Issues
-						li 
-							a(href="#") Virus Removal
-						li 
-							a(href="#") Upgrades / Optimization
-					a.btn.btn-outline(href="#") Learn More
+			.hero.row.bg-blue.hero-home
+				.wrap-center.slab
+					.slab-layout-left
+						h1 Gadgets We Repair
+						ul
+							div
+								li 
+									a(href="#") LCD Repair
+								li 
+									a(href="#") Touch Screens
+								li 
+									a(href="#") Battery Replacement
+								li 
+									a(href="#") Button Issues
+							div
+								li 
+									a(href="#") Camera Issues
+								li 
+									a(href="#") Virus Removal
+								li 
+									a(href="#") Upgrades / Optimization
+								li 
+									a(href="#") Upgrades / Optimization
+						.btn-wrap
+							a.btn.btn-outline(href="#") Learn More
+					.slab-layout-right
+						.slab-img
+							p slab image here
 			//- hero !
 
 
@@ -94,11 +102,13 @@ html.no-js
 
 			.row.bg-white.slab.index-slab-gg-box
 				.center
-					.wrap-txt.five.columns
+					.slab-layout-right
 						h2 Egestas Tristique Venenatis
 						p Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						a.btn.btn-outline(href="#") nothing but btn
-					.wrap-img.gg-cell-box
+						a.btn.bg-green(href="#") nothing but btn
+					
+					.slab-layout-left.sudo.gg-cell-box
+						
 
 
 

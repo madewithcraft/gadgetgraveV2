@@ -632,10 +632,12 @@ body,
 
 /* Menu Button */
 .menu-button {
-  height: 35px;
-  width: 24px;
-  top: 0px;
-  left: 0px;
+  height: 88px;
+  width: 88px;
+  top: -23px;
+  left: -23px;
+  background-color: #2799d5;
+  border-radius: 0;
   position: fixed;
   z-index: 1000;
   margin: 1em;
@@ -643,18 +645,18 @@ body,
   border: none;
   text-indent: 2.5em;
   font-size: 1.5em;
-  color: transparent;
-  background: transparent; }
+  color: transparent; }
   .menu-button span,
   .menu-button span::before,
   .menu-button span::after {
     overflow: visible;
     display: block;
     position: absolute;
-    width: 100%;
+    width: 30px;
     height: 1px;
     position: absolute;
-    left: 0;
+    left: 50%;
+    margin-left: -15px;
     background-color: #fff;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -734,16 +736,13 @@ body,
   padding: 1.2em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
 
-.menu-side a:first-child {
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
-
 /* Shown menu */
 .show-menu .menu-wrap {
   opacity: 1; }
 
 .show-menu .content-wrap {
-  -webkit-transform: translate3d(300px, 60px, 0);
-  transform: translate3d(300px, 60px, 0); }
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0); }
 
 html {
   box-sizing: border-box; }
@@ -840,7 +839,7 @@ ol, ul {
   background-color: #2799d5; }
 
 .bg-green {
-  background-color: #62c184; }
+  background-color: #62c184 !important; }
 
 .bg-green .btn {
   color: #fff;
@@ -877,10 +876,13 @@ ol, ul {
   background-image: -webkit-linear-gradient(124deg, #24afdb 0%, #1a9ccd 100%);
   background-image: -ms-linear-gradient(124deg, #24afdb 0%, #1a9ccd 100%); }
 
-.bg-blue .btn {
+.bg-blue.btn {
   color: #fff;
   border: none;
   background-color: #2799d5; }
+
+.bg-blue .g-nav a:hover {
+  color: red; }
 
 .bg-body {
   background: #f9f9fb; }
@@ -900,6 +902,18 @@ ol, ul {
   background: transparent url("img/svg-sprite.svg") no-repeat 0px 0px;
   background-size: 194px 67px; }
 
+ul.social {
+  position: absolute;
+  width: 250px;
+  display: block;
+  z-index: 5; }
+  ul.social li {
+    float: left; }
+
+.g-footer ul.social {
+  right: 0px;
+  top: 10px; }
+
 .icon {
   position: relative;
   display: block;
@@ -917,20 +931,47 @@ ol, ul {
   height: 20px;
   margin: -10px 0px 0px -10px; }
 
+.icon:hover {
+  cursor: pointer; }
+
 .icon-mag::before {
   background-position: -53px -9px; }
 
-.icon-shop::before {
-  background-position: -53px -9px; }
+.icon-cart::before {
+  background-position: -72px -9px; }
 
-.icon-phones::before {
-  background-position: -73px -9px; }
+.icon-phone::before {
+  background-position: -143px -9px; }
 
-.icon-facebook::before {
-  background-position: -47px -27px; }
+.icon.facebook::before {
+  background-position: -48px -27px; }
 
-.icon-twitter:hover::before {
+.icon.facebook:hover:before {
   background-position: -47px -45px; }
+
+.icon.twitter::before {
+  background-position: -80px -27px; }
+
+.icon.twitter:hover:before {
+  background-position: -80px -45px; }
+
+.icon.instagram::before {
+  background-position: -112px -27px; }
+
+.icon.instagram:hover:before {
+  background-position: -112px -45px; }
+
+.icon.youtube::before {
+  background-position: -144px -27px; }
+
+.icon.youtube:hover:before {
+  background-position: -144px -45px; }
+
+.icon.google-place::before {
+  background-position: -175px -27px; }
+
+.icon.google-place:hover:before {
+  background-position: -175px -45px; }
 
 .card {
   @extent .shadow;
@@ -960,8 +1001,8 @@ ol, ul {
 
 .g-header-wrap-right {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 18px;
+  right: 16px;
   width: 100px; }
   .g-header-wrap-right .icon {
     float: left;
@@ -969,6 +1010,28 @@ ol, ul {
 
 .hero {
   padding: 50px 15px; }
+
+.hero-home {
+  padding: 30px 20px; }
+
+.hero-home ul {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+  max-width: 300px; }
+  .hero-home ul li {
+    line-height: 13px;
+    line-height: 1.3rem; }
+
+.hero-home ul div {
+  width: 50%;
+  float: left;
+  margin-bottom: 20px; }
+
+.hero-home ul div {
+  width: 50%;
+  float: left; }
 
 .hero-pop-over {
   margin-top: -40px;
@@ -1005,12 +1068,24 @@ ol, ul {
   -moz-border-radius: 50px;
   border-radius: 50px;
   background-color: #2799d5;
-  color: #fff; }
+  color: #fff;
+  position: relative;
+  z-index: 5; }
 
 .btn-outline {
   border: 2px solid rgba(255, 255, 255, 0.3);
   overflow: hidden;
   background-color: transparent; }
+
+.btn-wrap {
+  display: block;
+  width: 100%;
+  float: left; }
+
+.slab-img {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1); }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -1033,22 +1108,29 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1; }
 
 h1 {
-  font-size: 35px;
-  font-size: 3.5rem;
-  line-height: 40px;
-  line-height: 4rem; }
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 30px;
+  line-height: 3rem; }
 
 h2 {
-  font-size: 25px;
-  font-size: 2.5rem; }
+  font-size: 22px;
+  font-size: 2.2rem; }
 
 h3 {
   font-size: 20px;
   font-size: 2rem; }
 
 p {
-  font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: 'open_sansregular'; }
+
+ul,
+ul li,
+ul a {
+  font-size: 12px;
+  font-size: 1.2rem;
   font-family: 'open_sansregular'; }
 
 ul.small,
@@ -1097,7 +1179,7 @@ ul.small a {
 .product-image {
   width: 100%;
   background-color: red;
-  height: 200px; }
+  height: 150px; }
 
 .product-txt {
   padding: 20px;
@@ -1105,19 +1187,52 @@ ul.small a {
   color: #7497a4; }
 
 .product-txt h3 {
-  line-height: 30px;
-  line-height: 3rem; }
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 2.4rem; }
+
+.product-txt h3 {
+  display: block;
+  width: 100%; }
 
 .product-price {
   font-size: 26px;
   font-size: 2.6rem;
   font-weight: 600;
   color: #1c8fca;
-  padding: 0 3px; }
+  padding: 0 3px;
+  width: 62px;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+  overflow: visible; }
 
-.product-price .product-price-super {
-  font-size: 16px;
-  font-size: 1.6rem; }
+.product-price .product-price-sign,
+.product-price .product-price-big,
+.product-price .product-price-small {
+  position: absolute;
+  display: block;
+  top: 0; }
+
+.product-price .product-price-big {
+  font-size: 36px;
+  font-size: 3.6rem;
+  width: 100%;
+  left: 0;
+  top: -14px; }
+
+.product-price .product-price-small {
+  font-size: 12px;
+  font-size: 1.2rem;
+  right: -6px;
+  top: 2px; }
+
+.product-price .product-price-sign {
+  font-size: 15px;
+  font-size: 1.5rem;
+  right: 15px;
+  left: -38px; }
 
 .txt-under-line {
   text-decoration: underline; }
@@ -1128,9 +1243,13 @@ ul.small a {
   display: block; }
 
 .slab {
-  padding: 50px 0;
   overflow: hidden;
   position: relative; }
+
+.slab-layout-left,
+.slab-layout-right {
+  float: left;
+  width: 100%; }
 
 /* 
     font-family: 'open_sanslight';
@@ -1168,6 +1287,9 @@ ul.small a {
     font-size: 10px;
     font-size: 1rem; }
 
+.g-footer-top-nav {
+  display: none; }
+
 .display-product {
   border-radius: 4px; }
 
@@ -1188,12 +1310,66 @@ ul.small a {
   position: relative; }
 
 .gg-cell-box {
+  position: relative; }
+
+.gg-cell-box::after {
   width: 795px;
   height: 610px;
   position: absolute;
-  right: -250px;
-  top: 220px;
-  background: transparent url("img/gadget-grave-replace-phone-box.png") no-repeat 0px 0px; }
+  right: -499px;
+  top: -167px;
+  background: transparent url("img/gadget-grave-replace-phone-box.png") no-repeat 0px 0px;
+  background-size: 500px 500px;
+  z-index: 0; }
 
 .index-slab-gg-box {
-  height: 500px; }
+  height: 430px;
+  text-align: center;
+  padding: 60px 50px; }
+
+.row-featured {
+  padding: 40px 20px; }
+
+.m-half {
+  width: 48%;
+  margin-left: 4%; }
+
+.m-half.item-1 {
+  margin-left: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .m-half.item-1 {
+    margin-left: 4%; }
+
+  .m-half.item-1.kill-left {
+    margin-left: 0; } }
+/* Larger than phablet */
+@media (min-width: 700px) {
+  .slab-layout-left,
+  .slab-layout-right {
+    width: 50%; }
+
+  .slab-layout-right {
+    height: 100%; }
+
+  .index-slab-gg-box {
+    text-align: left;
+    height: 390px;
+    padding: 100px 50px 60px; }
+
+  .gg-cell-box::after {
+    width: 795px;
+    height: 610px;
+    position: absolute;
+    right: -389px;
+    top: -147px;
+    background: transparent url("img/gadget-grave-replace-phone-box.png") no-repeat 0px 0px;
+    background-size: 650px 650px;
+    z-index: 0; } }
+@media (min-width: 900px) {
+  .g-footer-top-nav {
+    display: block; }
+
+  .g-footer ul.fl-left li:first-child {
+    padding-left: 0; } }
