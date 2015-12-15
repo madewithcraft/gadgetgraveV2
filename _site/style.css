@@ -1008,11 +1008,8 @@ ul.social {
     float: left;
     display: block; }
 
-.hero {
-  padding: 50px 15px; }
-
-.hero-home {
-  padding: 30px 20px; }
+.hero .slab-layout-left {
+  padding: 50px 30px; }
 
 .hero-home ul {
   display: block;
@@ -1032,6 +1029,17 @@ ul.social {
 .hero-home ul div {
   width: 50%;
   float: left; }
+
+.hero-home .slab-img:before {
+  width: 950px;
+  height: 510px;
+  left: -380px;
+  top: -239px;
+  background: transparent url("img/hero-home.jpg") no-repeat -60px -60px; }
+
+.hero-home .slab-layout-left {
+  position: relative;
+  z-index: 5; }
 
 .hero-pop-over {
   margin-top: -40px;
@@ -1366,7 +1374,14 @@ ul.small a {
     top: -147px;
     background: transparent url("img/gadget-grave-replace-phone-box.png") no-repeat 0px 0px;
     background-size: 650px 650px;
-    z-index: 0; } }
+    z-index: 0; }
+
+  .hero-home .slab-img:before {
+    width: 950px;
+    height: 340px;
+    left: -380px;
+    top: 0px;
+    background: transparent url("img/hero-home.jpg") no-repeat 0px 0px; } }
 @media (min-width: 900px) {
   .g-footer-top-nav {
     display: block; }
