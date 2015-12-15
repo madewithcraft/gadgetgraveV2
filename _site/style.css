@@ -1262,6 +1262,11 @@ ul.small a {
   width: 100%;
   display: block; }
 
+.location-header {
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase; }
+
 .slab {
   overflow: hidden;
   position: relative; }
@@ -1347,6 +1352,10 @@ ul.small a {
   text-align: center;
   padding: 60px 50px; }
 
+.index-loc-gg-box {
+  height: 493px;
+  padding: 45px 60px 50px; }
+
 .row-featured {
   padding: 40px 20px; }
 
@@ -1377,6 +1386,10 @@ ul.small a {
     text-align: left;
     height: 390px;
     padding: 100px 50px 60px; }
+
+  .index-loc-gg-box {
+    height: 330px;
+    padding: 90px 60px 50px; }
 
   .gg-cell-box::after {
     width: 795px;

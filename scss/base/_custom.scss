@@ -930,6 +930,11 @@ ul.small a {
 	display: block;
 }
 
+.location-header{
+	@include font-size(14);
+	text-transform: uppercase;
+}
+
 
 // ==========================================================================
 
@@ -1066,6 +1071,11 @@ ul.small a {
 	padding: 60px 50px;
 }
 
+.index-loc-gg-box {
+	height: 493px;
+	padding: 45px 60px 50px;
+}
+
 
 
 .row-featured {
@@ -1085,6 +1095,7 @@ ul.small a {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+
 
 	.m-half.item-1 {
 		margin-left: 4%; 
@@ -1115,6 +1126,12 @@ ul.small a {
 		height: 390px;
 	    padding: 100px 50px 60px;
 	}
+
+	.index-loc-gg-box {
+		height: 330px;
+		padding: 90px 60px 50px;
+	}
+
 
 	.gg-cell-box::after {
 	    width: 795px;
