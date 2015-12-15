@@ -29,7 +29,7 @@ html.no-js
 
 	
 //- start content
-.container.bg-blue
+.container.bg-red
 
 	//- g navagation
 	.menu-wrap.row
@@ -40,7 +40,7 @@ html.no-js
 
 
 	.content-wrap
-		.content.bg-blue.sudo
+		.content.bg-red.sudo
 
 			//- header
 			header.g-header
@@ -57,33 +57,22 @@ html.no-js
 
 
 				.g-header-wrap-right
-					a#searchTrig.icon.icon-mag(href="#") Search
-					a#cartTrig.icon.icon-shop.non-mobile(href="#") My Shopping Cart
-					a#phoneTrig.dis-b.g-phone.icon.icon-phones(href="#", tel="#")
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
 						span (000) 000-0000
 			//- header !
 
 
 			//- hero
-			.hero.row.bg-blue.bg-blue
-				.wrap-center
-					h1 Page Repair
-					ul
-						li 
-							a(href="#") LCD Repair
-						li 
-							a(href="#") Touch Screens
-						li 
-							a(href="#") Battery Replacement
-						li 
-							a(href="#") Button Issues
-						li 
-							a(href="#") Camera Issues
-						li 
-							a(href="#") Virus Removal
-						li 
-							a(href="#") Upgrades / Optimization
-					a.btn.btn-outline(href="#") Learn More
+			.hero.row.bg-red
+				.row.center
+					h1 This Here
+				.wrap-center.card
+					.wrap-img
+					.wrap-txt.max-600
+						h2 This is a header
+						p Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+						a.btn.btn-outline(href="#") Button here
 			//- hero !
 
 
