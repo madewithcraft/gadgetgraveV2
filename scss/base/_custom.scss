@@ -201,6 +201,18 @@ ol, ul {
 
 //=== Element BGs
 
+// Grey
+.bg-grey {
+	background-color: $bodyBase;
+}
+
+// grey on the btn
+.bg-grey .btn {
+	@include styleBtn(#fff, none, $gBlue);
+}
+
+//--- Sections | Grey !
+
 // white
 .bg-white {
 	background-color: $wht;
@@ -265,7 +277,7 @@ ol, ul {
 //--- Sections | Black !
 
 
-//--- Sections | Red
+//--- Sections | Red 
 
 // red
 .bg-red {
@@ -422,7 +434,7 @@ ul.social {
 
 // twitter
 .icon.facebook:hover:before {
-	background-position: -47px -45px;
+	background-position: -48px -45px;
 }  
 
 
@@ -801,14 +813,6 @@ ul.small a {
 
 
 
-
-
-
-
-
-
-
-
 .product-item {
 	display: block;
 	width: 100%;
@@ -821,8 +825,12 @@ ul.small a {
 
 .product-image {
 	width: 100%;
-	background-color: red;
 	height: 150px;
+    background-color: #FFF;
+    background-image: URL('img/fpo-products.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130px auto;
 }
 
 

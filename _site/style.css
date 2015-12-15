@@ -830,6 +830,14 @@ ol, ul {
 .row-kill-pad {
   padding: 0; }
 
+.bg-grey {
+  background-color: #f9f9fb; }
+
+.bg-grey .btn {
+  color: #fff;
+  border: none;
+  background-color: #2799d5; }
+
 .bg-white, .card {
   background-color: #fff; }
 
@@ -947,7 +955,7 @@ ul.social {
   background-position: -48px -27px; }
 
 .icon.facebook:hover:before {
-  background-position: -47px -45px; }
+  background-position: -48px -45px; }
 
 .icon.twitter::before {
   background-position: -80px -27px; }
@@ -1178,8 +1186,12 @@ ul.small a {
 
 .product-image {
   width: 100%;
-  background-color: red;
-  height: 150px; }
+  height: 150px;
+  background-color: #FFF;
+  background-image: URL("img/fpo-products.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130px auto; }
 
 .product-txt {
   padding: 20px;
