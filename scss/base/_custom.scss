@@ -4,6 +4,8 @@
 
 // ==========================================================================
   
+ $img-path: 'img/';
+
 // make everything border-box
 html {
   box-sizing: border-box;
@@ -591,15 +593,19 @@ ul.social {
 
 .hero {
 	// background-color: $gBlue;
-	padding: 50px 15px;
+	//padding: 50px 15px;
+}
+
+.hero .slab-layout-left {
+	padding: 50px 30px;
 }
 
 
 // ==== Heros !
 
-.hero-home {
-	padding: 30px 20px;
-}
+// .hero-home {
+// 	padding: 30px 20px;
+// }
 
 .hero-home ul {
 	display: block;
@@ -624,6 +630,29 @@ ul.social {
 	width: 50%;
 	float: left;
 }
+
+// .slab-img:before {
+// 	width: 100px;
+// 	height: 100px;
+// 	background: red;
+// }
+
+
+.hero-home .slab-img:before {
+    width: 950px;
+    height: 510px;
+    left: -380px;
+    top: -239px;
+    background: transparent url("img/hero-home.jpg") no-repeat -60px -60px;
+}
+
+
+
+.hero-home .slab-layout-left {
+	position: relative;
+	z-index: 5;
+}
+
 
 
 
@@ -1013,7 +1042,7 @@ ul.small a {
 	position: relative;
 }
 
-$img-path: 'img/';
+
 
 
 .gg-cell-box {
@@ -1096,6 +1125,15 @@ $img-path: 'img/';
 	    background: transparent url("img/gadget-grave-replace-phone-box.png") no-repeat 0px 0px;
 	    background-size: 650px 650px;
 	    z-index: 0;
+	}
+
+	.hero-home .slab-img:before {
+		width: 950px;
+	    height: 340px;
+	    left: -380px;
+	    top: 0px;
+		background: transparent url($img-path + 'hero-home.jpg') no-repeat 0px 0px;
+
 	}
 
 }
