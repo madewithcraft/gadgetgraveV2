@@ -407,17 +407,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/img\/hero-repiar.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 55031,
-		"inputAbbreviatedPath": "\/_site\/img\/hero-repiar.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/hero-repiar.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/_site\/img\/home-page-header.png": {
 		"fileType": 32768,
 		"ignore": 0,
