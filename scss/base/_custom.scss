@@ -453,7 +453,20 @@ ul.social {
 
 // phone
 .icon-phone::before {
-	background-position: -143px -9px;
+	background-position: -141px -9px;
+}
+
+// warranty
+.icon-warranty {
+    width: 100%;
+}
+
+.icon-warranty::before {
+	background-position: -141px -9px;
+	margin: -10px 0px 0px -8px;
+    background-position: -162px 1px;
+    width: 40px;
+    height: 30px;
 }
 
 
@@ -1023,12 +1036,13 @@ ul.small a {
 	.w-first{
 		@include font-size(100);
 		line-height: 24px;
+		font-weight: 600;
 	}
 	.w-second{
 		@include font-size(24);	
 	}
 	.w-footer{
-		color: #88e3a9;
+		color: #88e3a9 !important;
 		position: absolute;
 		width: 100%;
 		bottom: -3em;
