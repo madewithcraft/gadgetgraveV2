@@ -1012,6 +1012,29 @@ ul.small a {
     font-family: 'open_sanssemibold';
 */
 
+// ==========================================================================
+
+// Warranty Box
+
+// ==========================================================================
+
+.warranty-box{
+	position: relative;
+	.w-first{
+		@include font-size(100);
+		line-height: 24px;
+	}
+	.w-second{
+		@include font-size(24);	
+	}
+	.w-footer{
+		color: #88e3a9;
+		position: absolute;
+		width: 100%;
+		bottom: -3em;
+	}
+}
+
 
 // ==========================================================================
 

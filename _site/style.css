@@ -1316,6 +1316,21 @@ ul.small a {
     font-family: 'open_sansregular';
     font-family: 'open_sanssemibold';
 */
+.warranty-box {
+  position: relative; }
+  .warranty-box .w-first {
+    font-size: 100px;
+    font-size: 10rem;
+    line-height: 24px; }
+  .warranty-box .w-second {
+    font-size: 24px;
+    font-size: 2.4rem; }
+  .warranty-box .w-footer {
+    color: #88e3a9;
+    position: absolute;
+    width: 100%;
+    bottom: -3em; }
+
 .g-footer {
   background: #161e22;
   padding-top: 30px; }
