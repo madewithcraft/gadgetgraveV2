@@ -330,6 +330,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_site\/img\/bg-body.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1373,
+		"inputAbbreviatedPath": "\/_site\/img\/bg-body.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/bg-body.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/board-chip.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
