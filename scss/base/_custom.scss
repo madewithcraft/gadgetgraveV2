@@ -4,14 +4,16 @@
 
 // ==========================================================================
   
- $img-path: 'img/';
+$img-path: 'img/';
 
- $heroImgHome: 'hero-home.png';
+$heroImgHome: 'hero-home.png';
+$heroImgRepair: 'hero-repiar.jpg';
 
 // make everything border-box
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -181,9 +183,9 @@ ol, ul {
 //=== sizing
 
 // pad 20px
-.small-pad-20 {
-	padding: 20px;
-}
+// .small-pad-20 {
+// 	padding: 20px;
+// }
 
 // max width 0f 500px
 .max-600 {
@@ -192,9 +194,9 @@ ol, ul {
 
 // kill the padding on the row. This is used for the grid layouts and 
 // other layouts that already have indentation
-.row-kill-pad {
-	padding: 0;
-}
+// .row-kill-pad {
+// 	padding: 0;
+// }
 
 
 
@@ -209,6 +211,13 @@ ol, ul {
 .bg-grey {
 	background-color: $bodyBase;
 }
+
+.bg-grey * {
+	color: #7497a4;
+}
+
+
+
 
 // grey on the btn
 .bg-grey .btn {
@@ -526,6 +535,8 @@ ul.social {
 	padding: 0px 30px 30px;
 	background-color: $wht;
 	border-radius: 5px;
+	padding-top: 50px;
+	margin-bottom: 20px;
 }
 
 .center.card-full-wrap {
@@ -674,6 +685,16 @@ ul.social {
 }
 
 
+.hero-repair .slab-img:before {
+    width: 250px;
+    height: 330px;
+    top: -100px;
+    left: 50%;
+    margin-left: -125px;
+    background: transparent url("#{$img-path}#{$heroImgRepair}") no-repeat -110px 30px;
+    background-size: 500px 500px;
+    position: absolute;
+}
 
 
 .hero-home .slab-layout-left {
@@ -1119,6 +1140,14 @@ ul.small a {
 }
 
 
+.kill-round {
+	@include border-radius(0);
+}
+
+.inner-card {
+	padding: 20px;
+}
+
 /* Larger than phablet */
 @media (min-width: 550px) {
 
@@ -1192,6 +1221,13 @@ ul.small a {
 		padding-left: 0;
 	}
 }
+
+
+
+
+
+
+
 
 
 
