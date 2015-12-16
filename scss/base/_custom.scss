@@ -6,6 +6,8 @@
   
  $img-path: 'img/';
 
+ $heroImgHome: 'hero-home.png';
+
 // make everything border-box
 html {
   box-sizing: border-box;
@@ -657,20 +659,15 @@ ul.social {
 	float: left;
 }
 
-// .slab-img:before {
-// 	width: 100px;
-// 	height: 100px;
-// 	background: red;
-// }
-
 
 .hero-home .slab-img:before {
     width: 950px;
-    height: 510px;
-    left: -380px;
-    top: -239px;
-    background: transparent url("img/hero-home.jpg") no-repeat -60px -60px;
+    height: 620px;
+    top: -100px;
+    background: transparent url("#{$img-path}#{$heroImgHome}") no-repeat -50px -80px;
+    background-size: 500px 500px;
 }
+
 
 
 
@@ -755,7 +752,6 @@ ul.social {
 .slab-img {
 	width: 100%;
 	height: 200px;
-	background-color: rgba(255, 255, 255, 0.1);
 }
 
 
