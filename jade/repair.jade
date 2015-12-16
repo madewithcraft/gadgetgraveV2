@@ -29,10 +29,10 @@ html.no-js
 
 	
 //- start content
-.container.bg-blue
+.container
 
 	//- g navagation
-	.menu-wrap.row
+	.menu-wrap.row.bg-red
 		.menu-side
 			+navHeader
 
@@ -40,70 +40,96 @@ html.no-js
 
 
 	.content-wrap
-		.content.bg-blue.sudo
+		.content.sudo
 
 			//- header
-			header.g-header
+			header.g-header.bg-red
 				.center
 					h1.g-logo.sprite
 						p
 							a.txt-hide(href="#") Gadget Grave
 
-					button.menu-button#open-button
+					button.menu-button#open-button.bg-red
 						span
 
-
-
-
-
 				.g-header-wrap-right
-					a#searchTrig.icon.icon-mag(href="#") Search
-					a#cartTrig.icon.icon-shop.non-mobile(href="#") My Shopping Cart
-					a#phoneTrig.dis-b.g-phone.icon.icon-phones(href="#", tel="#")
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
 						span (000) 000-0000
 			//- header !
 
 
 			//- hero
-			.hero.row.bg-blue.bg-blue
-				.wrap-center
-					h1 Page Repair
-					ul
-						li 
-							a(href="#") LCD Repair
-						li 
-							a(href="#") Touch Screens
-						li 
-							a(href="#") Battery Replacement
-						li 
-							a(href="#") Button Issues
-						li 
-							a(href="#") Camera Issues
-						li 
-							a(href="#") Virus Removal
-						li 
-							a(href="#") Upgrades / Optimization
-					a.btn.btn-outline(href="#") Learn More
+			.hero.row.bg-red.small-pad-20
+				.row.wrap-center
+					.page-title-header
+						h1 Smartphone Repairs
+				.wrap-center.card
+					.wrap-img
+					.wrap-txt.max-600
+						h2 Is your Cell Phone Broken and Needing Repairs?
+						p The Fort Smith, Arkansas area now has a store that can accommodate all of your smart phone repair needs! We have full time cell phone technicians on staff and repair more than 30 devices a day, with busy days up to 60. Our certified technicians handle smartphone repairs daily and repair Apple iPhones, Samsung Galaxy Phones, HTC Phones, and we are able to get parts for almost all major brands. We have 1000’s of cell phone parts in stock and can repair 90% of issues the same day. We can Replace Screens on almost any device that parts are available.
 			//- hero !
 
 
-
-
-			
-
-
-			.row.bg-white.slab.index-slab-gg-box
+			.row.bg-grey.small-pad-20
 				.center
-					.wrap-txt.five.columns
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 Charge Port Replacements
+						p Are you unsure if it is cheaper to get a phone repaired than it is get a replacement? While some of the newer devices’ replacement glass is very expensive, most of the other repairs that are available generally cost under $80. Some of the most common repairs we see are Charge Port Replacements.
+
+
+			.row.bg-purp.small-pad-20
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.slab.small-txt-center
+					.wrap-txt.max-600
 						h2 Egestas Tristique Venenatis
 						p Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
 						a.btn.btn-outline(href="#") nothing but btn
-					.wrap-img.gg-cell-box
+					.wrap-img
 
 
 
-			//- featured products
-			include includes/products-featured.jade
+			.row.bg-grey.small-pad-20
+				.center
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 Gadgets we Carry
+						p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet nonn. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet nonn. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam aecenas sed diam eget.
+
+						a.btn(href="#") Shop All Gadgets
+
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid.small-pad-20
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Is your Cell Phone Broken?
+								p We have all of the most common repair parts in stock and it usually only take a couple of hours to finish the repair. This makes it easier to avoid a lot of those “2-4 business days” situations just to fix the broken glass on your mobile phone.
+						.card 
+							.txt-wrap
+								h2 Is your Cell Phone Broken?
+								p We have all of the most common repair parts in stock and it usually only take a couple of hours to finish the repair. This makes it easier to avoid a lot of those “2-4 business days” situations just to fix the broken glass on your mobile phone.
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap
+								h2 Is your Cell Phone Broken?
+								p We have all of the most common repair parts in stock and it usually only take a couple of hours to finish the repair. This makes it easier to avoid a lot of those “2-4 business days” situations just to fix the broken glass on your mobile phone.
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
 
 			//- footer
 			include includes/footer.jade

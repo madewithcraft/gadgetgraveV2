@@ -1018,6 +1018,9 @@ ul.social {
   width: 48px;
   height: 100px; }
 
+.page-title-header {
+  padding: 30px 0; }
+
 .g-header {
   position: relative;
   height: 88px; }
