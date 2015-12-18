@@ -29,10 +29,10 @@ html.no-js
 
 	
 //- start content
-.container.bg-blue
+.container.bg-purp
 
 	//- g navagation
-	.menu-wrap.row
+	.menu-wrap.row.bg-purp
 		.menu-side
 			+navHeader
 
@@ -40,70 +40,94 @@ html.no-js
 
 
 	.content-wrap
-		.content.bg-blue.sudo
+		.content.sudo
 
 			//- header
-			header.g-header
+			header.g-header.bg-purp
 				.center
 					h1.g-logo.sprite
 						p
 							a.txt-hide(href="#") Gadget Grave
 
-					button.menu-button#open-button
+					button.menu-button#open-button.bg-purp
 						span
 
-
-
-
-
 				.g-header-wrap-right
-					a#searchTrig.icon.icon-mag(href="#") Search
-					a#cartTrig.icon.icon-shop.non-mobile(href="#") My Shopping Cart
-					a#phoneTrig.dis-b.g-phone.icon.icon-phones(href="#", tel="#")
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
 						span (000) 000-0000
 			//- header !
 
 
 			//- hero
-			.hero.row.bg-blue.bg-blue
-				.wrap-center
-					h1 Page About
-					ul
-						li 
-							a(href="#") LCD Repair
-						li 
-							a(href="#") Touch Screens
-						li 
-							a(href="#") Battery Replacement
-						li 
-							a(href="#") Button Issues
-						li 
-							a(href="#") Camera Issues
-						li 
-							a(href="#") Virus Removal
-						li 
-							a(href="#") Upgrades / Optimization
-					a.btn.btn-outline(href="#") Learn More
+			.hero.hero-repair.row.bg-purp.inner-card
+				.row.center
+					.page-title-header
+						h1 About Page
+				.wrap-center.card
+					.wrap-txt.slab-layout-left
+						h2 Header here
+						p Tneed content here - 550 words please
+
+					.slab-layout-right
+						.slab-img.sudo
 			//- hero !
 
 
-
-
-			
-
-
-			.row.bg-white.slab.index-slab-gg-box
+			.row.bg-grey
 				.center
-					.wrap-txt.five.columns
-						h2 Egestas Tristique Venenatis
-						p Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						a.btn.btn-outline(href="#") nothing but btn
-					.wrap-img.gg-cell-box
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 Header Here
+						p Tneed content here - 250 words please
 
 
 
-			//- featured products
-			include includes/products-featured.jade
+
+
+			.row.bg-green.slab.index-slab-gg-box
+				.center
+					.slab-layout-right
+						h2  Header here
+						p Need content here - 250 words please
+					
+					.slab-layout-left.sudo.gg-cell-box
+
+
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Is your Cell Phone Broken?
+								p We have all of the most common repair parts in stock and it usually only take a couple of hours to finish the repair. This makes it easier to avoid a lot of those “2-4 business days” situations just to fix the broken glass on your mobile phone.
+						.card 
+							.txt-wrap
+								h2 The importance of having your cell phone.
+								p To most of us, the cell phone is just as important as your wallet or car keys. During the repair, our automated Customer Relations Management Software has the ability to email, text, and call you throughout the repair to keep you updated.
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
+
+
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
 
 			//- footer
 			include includes/footer.jade

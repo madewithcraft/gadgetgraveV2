@@ -32,7 +32,7 @@ html.no-js
 .container.bg-blue
 
 	//- g navagation
-	.menu-wrap.row
+	.menu-wrap.row.bg-blue
 		.menu-side
 			+navHeader
 
@@ -40,70 +40,96 @@ html.no-js
 
 
 	.content-wrap
-		.content.bg-blue.sudo
+		.content.sudo
 
 			//- header
-			header.g-header
+			header.g-header.bg-blue
 				.center
 					h1.g-logo.sprite
 						p
 							a.txt-hide(href="#") Gadget Grave
 
-					button.menu-button#open-button
+					button.menu-button#open-button.bg-blue
 						span
 
-
-
-
-
 				.g-header-wrap-right
-					a#searchTrig.icon.icon-mag(href="#") Search
-					a#cartTrig.icon.icon-shop.non-mobile(href="#") My Shopping Cart
-					a#phoneTrig.dis-b.g-phone.icon.icon-phones(href="#", tel="#")
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
 						span (000) 000-0000
 			//- header !
 
 
 			//- hero
-			.hero.row.bg-blue.bg-blue
-				.wrap-center
-					h1 Page Replace
-					ul
-						li 
-							a(href="#") LCD Repair
-						li 
-							a(href="#") Touch Screens
-						li 
-							a(href="#") Battery Replacement
-						li 
-							a(href="#") Button Issues
-						li 
-							a(href="#") Camera Issues
-						li 
-							a(href="#") Virus Removal
-						li 
-							a(href="#") Upgrades / Optimization
-					a.btn.btn-outline(href="#") Learn More
+			.hero.hero-repair.row.bg-blue.inner-card
+				.row.center
+					.page-title-header
+						h1 Replacement Phones
+				.wrap-center.card
+					.wrap-txt.slab-layout-left
+						h2 Get a Replacement Phone Today!
+						p Are you looking to replace your old phone? We have many great replacement phones in stock and they are backed by a 90 day warranty. There is an extensive testing process that goes into each phone we sell. We sell both online and in the store. We carry many different devices from flip phones to smartphones.
+
+					.slab-layout-right
+						.slab-img.sudo
 			//- hero !
 
-
-
-
 			
-
-
-			.row.bg-white.slab.index-slab-gg-box
+			.row.bg-grey
 				.center
-					.wrap-txt.five.columns
-						h2 Egestas Tristique Venenatis
-						p Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						a.btn.btn-outline(href="#") nothing but btn
-					.wrap-img.gg-cell-box
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 Tired of your phone?
+						p Bring it to Gadget Grave and Sell your device. We buy broken gadgets (if they still have value), and always try to give a higher trade value than cash value. This helps ensure you get the best deal possible on a used replacement phone.
+						.row.txt-center
+							.six.columns
+								ul
+									li Apple iPhones
+									li Samsung Android Devices
+									li HTC Smartphones
+									li Nokia Smartphones
+							.six.columns
+								ul
+									li AT&T Replacement Phones
+									li Verizon Replacement Phones
+									li Straight Talk Replacement Phones
+									li Page Plus Replacement Phones
 
 
 
-			//- featured products
-			include includes/products-featured.jade
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Is your Cell Phone Broken?
+								p We have all of the most common repair parts in stock and it usually only take a couple of hours to finish the repair. This makes it easier to avoid a lot of those “2-4 business days” situations just to fix the broken glass on your mobile phone.
+						.card 
+							.txt-wrap
+								h2 Gadget Grave Buys Used Phones
+								p For more information on our device purchasing program, check out the purchasing page! If you have any questions, please feel free to give us a call at (479) 431-6091. Never overspend on another phone when the ‘other’ guys offer no warranty. We have a habit of exceeding expectations. Buy from Fort Smith’s most trusted phone replacement company!
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
+
+
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
 
 			//- footer
 			include includes/footer.jade
@@ -112,17 +138,3 @@ html.no-js
 
 script(src='js/classie.js')
 script(src='js/main.js')
-
-
-
-
-
-
-
-
-
-
-
-
-
-

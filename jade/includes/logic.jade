@@ -2,23 +2,23 @@
 	var navHeaderLinks = [ 
 	  	{
 	    	name: 'Repair',
-	    	link: 'repair.html'
+	    	link: '/_clients/gadget-grave/dev-v1.0/_site/repair.html'
 	  	},
 	  	{ 
 	  		name: 'Replace', 
-	  		link: 'replace.html' 
+	  		link: '/_clients/gadget-grave/dev-v1.0/_site/replace.html' 
 	  	},
 	  	{ 
 	  		name: 'Sell', 
-	  		link: 'sell.html' 
+	  		link: '#' 
 	  	},
 	  	{ 
 	  		name: 'Shop', 
-	  		link: 'shop.html' 
+	  		link: '/_clients/gadget-grave/dev-v1.0/_site/shop.html' 
 	  	},
 	  	{ 
 	  		name: 'About', 
-	  		link: 'about.html' 
+	  		link: '/_clients/gadget-grave/dev-v1.0/_site/about.html' 
 	  	},
 	  	{ 
 	  		name: 'Blog', 
@@ -26,11 +26,11 @@
 	  	},
 	  	{ 
 	  		name: 'Contact', 
-	  		link: 'contact.html' 
+	  		link: '/_clients/gadget-grave/dev-v1.0/_site/contact.html' 
 	  	},
 	  	{ 
 	  		name: 'Locations', 
-	  		link: 'locations.html' 
+	  		link: '/_clients/gadget-grave/dev-v1.0/_site/locations.html' 
 	  	}
 	];
 
@@ -44,7 +44,7 @@ mixin navHeader
 		ul
 			-each post in navHeaderLinks
 				li
-					a(href="/#{post.link}") #{post.name}
+					a(href="#{post.link}") #{post.name}
 
 
 

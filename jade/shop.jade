@@ -29,10 +29,10 @@ html.no-js
 
 	
 //- start content
-.container.bg-blue
+.container.bg-red
 
 	//- g navagation
-	.menu-wrap.row
+	.menu-wrap.row.bg-red
 		.menu-side
 			+navHeader
 
@@ -40,78 +40,51 @@ html.no-js
 
 
 	.content-wrap
-		.content.bg-blue.sudo
+		.content.sudo
 
 			//- header
-			header.g-header
+			header.g-header.bg-red
 				.center
 					h1.g-logo.sprite
 						p
 							a.txt-hide(href="#") Gadget Grave
 
-					button.menu-button#open-button
+					button.menu-button#open-button.bg-red
 						span
 
-
-
-
-
 				.g-header-wrap-right
-					a#searchTrig.icon.icon-mag(href="#") Search
-					a#cartTrig.icon.icon-shop.non-mobile(href="#") My Shopping Cart
-					a#phoneTrig.dis-b.g-phone.icon.icon-phones(href="#", tel="#")
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
 						span (000) 000-0000
 			//- header !
 
 
 			//- hero
-			.hero.row.bg-blue.bg-blue
-				.wrap-center
-					h1 Page Shop
-					ul
-						li 
-							a(href="#") LCD Repair
-						li 
-							a(href="#") Touch Screens
-						li 
-							a(href="#") Battery Replacement
-						li 
-							a(href="#") Button Issues
-						li 
-							a(href="#") Camera Issues
-						li 
-							a(href="#") Virus Removal
-						li 
-							a(href="#") Upgrades / Optimization
-					a.btn.btn-outline(href="#") Learn More
-			//- hero !
-
-
-
-
-			
-
-
-			.row.bg-white.slab.index-slab-gg-box
-				.center
-					.wrap-txt.five.columns
-						h2 Egestas Tristique Venenatis
-						p Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						a.btn.btn-outline(href="#") nothing but btn
-					.wrap-img.gg-cell-box
-
 
 
 			//- featured products
 			include includes/products-featured.jade
 
+			//- featured products
+			include includes/products-featured.jade
+
+			//- featured products
+			include includes/products-featured.jade
+
+			//- featured products
+			include includes/products-featured.jade
+
+			//- location
+			include includes/location.jade
+
 			//- footer
 			include includes/footer.jade
 
-
-
 script(src='js/classie.js')
 script(src='js/main.js')
+
+
+
 
 
 

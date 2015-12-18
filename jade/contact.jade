@@ -32,7 +32,7 @@ html.no-js
 .container.bg-blue
 
 	//- g navagation
-	.menu-wrap.row
+	.menu-wrap.row.bg-blue
 		.menu-side
 			+navHeader
 
@@ -40,70 +40,78 @@ html.no-js
 
 
 	.content-wrap
-		.content.bg-blue.sudo
+		.content.sudo
 
 			//- header
-			header.g-header
+			header.g-header.bg-blue
 				.center
 					h1.g-logo.sprite
 						p
 							a.txt-hide(href="#") Gadget Grave
 
-					button.menu-button#open-button
+					button.menu-button#open-button.bg-blue
 						span
 
-
-
-
-
 				.g-header-wrap-right
-					a#searchTrig.icon.icon-mag(href="#") Search
-					a#cartTrig.icon.icon-shop.non-mobile(href="#") My Shopping Cart
-					a#phoneTrig.dis-b.g-phone.icon.icon-phones(href="#", tel="#")
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
 						span (000) 000-0000
 			//- header !
 
 
 			//- hero
-			.hero.row.bg-blue.bg-blue
-				.wrap-center
-					h1 Page Contact
-					ul
-						li 
-							a(href="#") LCD Repair
-						li 
-							a(href="#") Touch Screens
-						li 
-							a(href="#") Battery Replacement
-						li 
-							a(href="#") Button Issues
-						li 
-							a(href="#") Camera Issues
-						li 
-							a(href="#") Virus Removal
-						li 
-							a(href="#") Upgrades / Optimization
-					a.btn.btn-outline(href="#") Learn More
+			.hero.hero-repair.row.bg-blue.inner-card
+				.row.center
+					.page-title-header
+						h1 Contact
+
 			//- hero !
 
 
+			.row.bg-body.pop-over-wrap
+				.center.card-full-wrap
+					.card.sudo
+						.wrap-img
+						.wrap-txt.max-600
+							h2 Call us for free! 1 (479) 431-6091
+							p Gadget Grave is a small, employee owned and operated, company with big ideas. We are a tight knit environmentally conscious group who think we can make a small difference in the world. For example did you know that cellphones and gadgets can leach toxic chemicals into the ground like arsenic, lead, cadmium, and beryllium? Did you know that for every tossed battery pack, several thousand gallons of water are polluted? Cellphones and gadgets have become a way of life for us, we love them! Throughout 97% of our life we have a gadget or some kind of electronic device less than 5 feet away from our body. The sad part is that our loved devices won’t last forever, sometimes they succumb to accidents, and sometimes to years of normal wear-and-tear. When these things happen, we can do a few things to help the environment: 1. Give them new life by repairing them. 2. Give them a proper burial by responsible recycling. 3. Fix them up and donate them to a charity organization. Contact Us Today!
+							p CONTACT FORM WILL GO HERE
+							a.btn.btn-outline(href="#") Send
 
 
-			
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Our Locations
+								p Need Content here - 200 words
+								a.btn.btn-outline(href="#") Locations
+						.card 
+							.txt-wrap
+								h2 Gadget Grave Buys Used Phones
+								p For more information on our device purchasing program, check out the purchasing page! If you have any questions, please feel free to give us a call at (479) 431-6091. Never overspend on another phone when the ‘other’ guys offer no warranty. We have a habit of exceeding expectations. Buy from Fort Smith’s most trusted phone replacement company!
 
 
-			.row.bg-white.slab.index-slab-gg-box
-				.center
-					.wrap-txt.five.columns
-						h2 Egestas Tristique Venenatis
-						p Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-						a.btn.btn-outline(href="#") nothing but btn
-					.wrap-img.gg-cell-box
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
 
 
 
-			//- featured products
-			include includes/products-featured.jade
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
 
 			//- footer
 			include includes/footer.jade
