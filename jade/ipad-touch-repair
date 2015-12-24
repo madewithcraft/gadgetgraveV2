@@ -1,0 +1,151 @@
+//- data / logic 
+include includes/logic.jade 
+doctype
+html.no-js
+
+
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		include includes/heads/head-home.jade
+
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='style.css')
+
+		link(rel="apple-touch-icon" href="../img/apple-touch-icon.png")
+		link(rel="shortcut icon" type="image/png" href="/favicon.png")
+
+		
+
+	body.home
+		<!--[if lt IE 8]>
+		| p.browsehappy
+		| You are using an <strong>outdated</strong> browser.
+		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		| to improve your experience.
+		<![endif]-->
+
+
+	
+//- start content
+.container.bg-red
+
+	//- g navagation
+	.menu-wrap.row.bg-red
+		.menu-side
+			+navHeader
+
+
+
+
+	.content-wrap
+		.content.sudo
+
+			//- header
+			header.g-header.bg-red
+				.center
+					h1.g-logo.sprite
+						p
+							a.txt-hide(href="#") Gadget Grave
+
+					button.menu-button#open-button.bg-red
+						span
+
+				.g-header-wrap-right
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
+						span (000) 000-0000
+			//- header !
+
+
+			//- hero
+			.hero.hero-repair.row.bg-red.inner-card
+				.row.center
+					.page-title-header
+						h1 iPod Touch Repair
+				.wrap-center.card
+					.wrap-txt.slab-layout-left
+						h2 Screen and Software repairs
+						p The Apple iTouch is an amazing device (when it is working). If you break your iPod Touch, the cost of replacing the device is almost always 3-4 times more expensive than getting it fixed.  Many stores charge over $300 for a new iPod Touch.  Why not get yours repaired today? We stock parts for the Apple iTouch 2nd generation, 3rd generation, and 4th generation. Most repairs take less than 30 minutes and are diagnosed by Certified electronic technicians in a professional time-oriented manner. Note: Liquid damage iPod Touch usually do not have a good prognosis.  While we will be happy to look at it, please be aware that they are usually not repairable.
+
+					.slab-layout-right
+						.slab-img.sudo
+			//- hero !
+
+
+			.row.bg-grey
+				.center
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 We are Fort Smith Arkansas Apple specialists!
+						p Most repairs take less than 1 hour.  We repair all major brand cell phones, gadgets, digital cameras, etc.
+						.row.txt-center
+							.six.columns
+								ul
+									li Glass/Digitizer Replacement
+									li LCD Replacement
+									li Headphone Jack
+
+							.six.columns
+								ul
+									li Jailbreak
+									li Battery Replacement
+									li Camera Replacement
+
+
+
+
+			.row.bg-purp.slab.index-slab-gg-box
+				.center
+					.slab-layout-right
+						h2.number-header (479) 431 – 6091
+						p Call us today for a quick quote 
+					
+					.slab-layout-left.sudo.gg-cell-box
+
+			
+
+
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Is your Cell Phone Broken?
+								p We have all of the most common repair parts in stock and it usually only take a couple of hours to finish the repair. This makes it easier to avoid a lot of those “2-4 business days” situations just to fix the broken glass on your mobile phone.
+						.card 
+							.txt-wrap
+								h2 The importance of having your cell phone.
+								p To most of us, the cell phone is just as important as your wallet or car keys. During the repair, our automated Customer Relations Management Software has the ability to email, text, and call you throughout the repair to keep you updated.
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
+
+
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
+
+			//- footer
+			include includes/footer.jade
+
+
+
+script(src='js/classie.js')
+script(src='js/main.js')

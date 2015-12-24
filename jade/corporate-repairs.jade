@@ -1,0 +1,152 @@
+//- data / logic 
+include includes/logic.jade 
+doctype
+html.no-js
+
+
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		include includes/heads/head-home.jade
+
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='style.css')
+
+		link(rel="apple-touch-icon" href="../img/apple-touch-icon.png")
+		link(rel="shortcut icon" type="image/png" href="/favicon.png")
+
+		
+
+	body.home
+		<!--[if lt IE 8]>
+		| p.browsehappy
+		| You are using an <strong>outdated</strong> browser.
+		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		| to improve your experience.
+		<![endif]-->
+
+
+	
+//- start content
+.container.bg-red
+
+	//- g navagation
+	.menu-wrap.row.bg-red
+		.menu-side
+			+navHeader
+
+
+
+
+	.content-wrap
+		.content.sudo
+
+			//- header
+			header.g-header.bg-red
+				.center
+					h1.g-logo.sprite
+						p
+							a.txt-hide(href="#") Gadget Grave
+
+					button.menu-button#open-button.bg-red
+						span
+
+				.g-header-wrap-right
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
+						span (000) 000-0000
+			//- header !
+
+
+			//- hero
+			.hero.hero-repair.row.bg-red.inner-card
+				.row.center
+					.page-title-header
+						h1 Corporate Repairs
+				.wrap-center.card
+					.wrap-txt.slab-layout-left
+						h2 Computers, Smartphones, and Tablets
+						p Gadget Grave offers on-site repair services as well as pick-up and drop-off services as well.  We offer corporate incentives for clients that begin using us for their repair needs.  This includes 15% off on all repairs.  We offer on-site computer repairs to help you when your system crashes and your business stops.  We are generally able to have a technician there within 1 hour.  Our billing rate depends on the type of repair we are doing. Please contact us for any specific questions regarding our corporate repair services.
+
+					.slab-layout-right
+						.slab-img.sudo
+			//- hero !
+
+
+			.row.bg-grey
+				.center
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 Sign-Up To Be A Corporate Client Today
+						p Currently, we have over 125 corporate clients that we monitor their networks, repair their phones, do on-site computer repairs, and offer custom build solutions. We work closely with each client to ensure they are made a priority and are repaired quickly. Let us handle the headache and you concentrate on what you do best… run your business.
+
+
+
+
+
+			.row.bg-purp.slab.index-slab-gg-box
+				.center
+					.slab-layout-right
+						h2  How We Can Help
+						p The terms are net 30.  This allows you to send in your employee’s broken phone, have it repaired by us, then have an invoice sent over to your company.  We email our invoices to the company email address on file and allow online payments and/or checks. To sign up for a corporate account, contact us now. Or you can feel free to Call us today! 479 431-6091.  Click here to view some of the corporate incentives and services we offer. We really do not have any stipulations for being a corporate client other than having a business license and more than 3 devices that will need servicing.  This is a great solution to getting discounts on repairs and being made a priority.
+
+
+					
+					.slab-layout-left.sudo.gg-cell-box
+
+			
+
+
+
+			.row.bg-grey
+				.center
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 Over the Phone Queotes
+						p We have a price list on hand to be able to give repair quotes over the phone. Our technicians are always on hand if you need to call and get an idea of the cost to fix your broken phone. If we do not have the part in stock, we have several suppliers ready to send parts overnight. The parts generally arrive before noon. This means that the device will be repaired within 24 hours of it being dropped off. We strive to have the quickest turnaround times of any repair facility in our region.
+
+						h2.number-header (479) 431-6091
+
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Is your Cell Phone Broken?
+								p We have all of the most common repair parts in stock and it usually only take a couple of hours to finish the repair. This makes it easier to avoid a lot of those “2-4 business days” situations just to fix the broken glass on your mobile phone.
+						.card 
+							.txt-wrap
+								h2 The importance of having your cell phone.
+								p To most of us, the cell phone is just as important as your wallet or car keys. During the repair, our automated Customer Relations Management Software has the ability to email, text, and call you throughout the repair to keep you updated.
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
+
+
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
+
+			//- footer
+			include includes/footer.jade
+
+
+
+script(src='js/classie.js')
+script(src='js/main.js')

@@ -1,0 +1,126 @@
+//- data / logic 
+include includes/logic.jade 
+doctype
+html.no-js
+
+
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		include includes/heads/head-home.jade
+
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='style.css')
+
+		link(rel="apple-touch-icon" href="../img/apple-touch-icon.png")
+		link(rel="shortcut icon" type="image/png" href="/favicon.png")
+
+		
+
+	body.home
+		<!--[if lt IE 8]>
+		| p.browsehappy
+		| You are using an <strong>outdated</strong> browser.
+		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		| to improve your experience.
+		<![endif]-->
+
+
+	
+//- start content
+.container.bg-red
+
+	//- g navagation
+	.menu-wrap.row.bg-red
+		.menu-side
+			+navHeader
+
+
+
+
+	.content-wrap
+		.content.sudo
+
+			//- header
+			header.g-header.bg-red
+				.center
+					h1.g-logo.sprite
+						p
+							a.txt-hide(href="#") Gadget Grave
+
+					button.menu-button#open-button.bg-red
+						span
+
+				.g-header-wrap-right
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
+						span (000) 000-0000
+			//- header !
+
+
+			//- hero
+			.hero.hero-repair.row.bg-red.inner-card
+				.row.center
+					.page-title-header
+						h1 Warranty Information
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Limited Liability
+								p Purchases from Gadget Grave are automatically subject to the following terms of service.  Gadget Grave accepts no returns on opened or used accessories.  Refunds require managerial approval.  RETURNS PAST 7 DAYS WILL BE ISSUED AS STORE CREDIT ONLY.  Repair costs may vary. We will honor a 90-day warranty on all device purchases, repairs and workmanship. This warranty excludes software problems, devices with any signs of liquid damage, main circuit board (motherboard) issues, or owner neglect (including drops, breaks, cracks, part removal, abuse, element exposure, etc.) Once the waiver is signed, the customer agrees that the device, if abandoned (left for more than 30 days), becomes property of Gadget Grave. Repairs with break and heat risks can be detrimental to the functionality of the device. These services are evaluated as separate repairs due to risks associated. All service fees collected prior to repairs are non-refundable. We require passwords for testing purposes only. In accordance with the Privacy Act of 1974, we do not divulge, save, or examine any personal information. Any device that we can not test WILL NOT be eligible for a repair warranty. We appreciate your business and hope to find the solution that fits! As policy, we DO NOT accept personal checks as payment. Feel free to call the store for more information.
+
+								h2 Liquid Damage
+								p This warranty does not apply to devices that have been exposed to liquid in any form.  Electronic devices which have been exposed to liquid and have had their condition compromised are known to be unpredictable before and after any repairs are made on the device.
+								p Gadget Grave’s “Liquid Damage Cleaning” service is a non-warrantied procedure implemented to stop corrosion on devices and attempt to restore full functionality to the device and extend the life of the device.  Depending on the level of liquid exposure the device has experienced, our sales technicians may offer and explain this service in addition to the price of repairs that may be needed after the device has had this service performed.
+
+								h2 Repair of Computers and Consoles
+								p Unless otherwise noted, gaming consoles and computers that have been repaired “solder reflow” process are covered by specific warranty policies. Any successful repair of a computer or a console that has been done to solve “red ring of death”, “yellow light of death”, overheating or any other relevant matter is covered by a limited warranty for the lifetime of the device. Under this warranty, the devices covered can be repaired up to three (3) times during the lifetime of the device. Each instance will be documented with a new work order. This warranty does not cover internal or external liquid damage or end-user damage (broken housing, components, ports, etc. not caused by Gadget Grave).
+								p We will attempt to keep your data whenever possible however in some circumstances it is not possible. Gadget Grave will not be held liable for any loss of data.  With phones, tablets, consoles, computers, et. al., sometimes, the only way to repair the issue is to remove said data.  We apologize for any inconvenience this causes and do our best to inform the customer prior to any data removal.
+
+								h2 Purchased Devices
+								p Unless otherwise noted, any device sold by Gadget Grave automatically comes with a warranty starting 90 days from the original date of purchase. This is a guarantee that the device will operate correctly according to its individual specifications. This warranty does not cover physical damage (cracks, chips, scratches, bumps, etc), liquid exposure of any kind, nor the end user error or software problems created. Gadget Grave will not cover user abuse under the warranty.
+								
+
+								h2 Return Policy
+								p Within 24 hours : All purchases, unless otherwise noted, may be returned for a full refund within 24 hours of the original purchase date. Items must be returned in the same physical aesthetic condition, in good condition, in the intact packaging, free from liquid exposure and in the case of mobile devices – not active on any service account, and not locked with a passcode.  In the case of accessories,  the purchase will be refunded in the same form of payment used to purchase the device . Managerial approval is required.
+								p Within 7 days : All purchases, unless otherwise indicated, may be returned for a full refund as store credit or 85 % of the purchase price. Reimbursements are made in the same form of payment used to purchase the device or accessory. Managerial approval is required.
+								p * New Items: Any device that is sold as “NEW” is covered by the same return policies and warranties as other device sales but will include a restocking fee of 20% (applicable after the return period of 24 hours). This rate is applied automatically and is collected in addition to any other applicable fees acquired upon the purchase of the device.
+								p **Any item labeled and sold as “NEW ” is any item which is still in a sealed package, or has the original plastic stickers on the device that have never been removed. These items can not be returned to our suppliers and can not be sold as “New” after they have been opened.
+								p Outside of the return policy: If the purchase does not fit into any of these policies, either due to time elapsed from the original purchase, damage to a device, or any other reason not covered by the in-store warranty, the store is not required to make any refund or exchange if the device is evaluated in any condition other than the way it was purchased. It is in these cases where the client will be offered a value equal to the “Fair Wholesale Market Vale”  This value can be determined by visiting www.buymyphone.com or another similar site. All returns, exchanges and purchases of devices are at the discretion of the Buying Manager.
+
+
+
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
+
+
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
+
+			//- footer
+			include includes/footer.jade
+
+
+
+script(src='js/classie.js')
+script(src='js/main.js')

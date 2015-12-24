@@ -1,0 +1,154 @@
+//- data / logic 
+include includes/logic.jade 
+doctype
+html.no-js
+
+
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		include includes/heads/head-home.jade
+
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='style.css')
+
+		link(rel="apple-touch-icon" href="../img/apple-touch-icon.png")
+		link(rel="shortcut icon" type="image/png" href="/favicon.png")
+
+		
+
+	body.home
+		<!--[if lt IE 8]>
+		| p.browsehappy
+		| You are using an <strong>outdated</strong> browser.
+		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		| to improve your experience.
+		<![endif]-->
+
+
+	
+//- start content
+.container.bg-red
+
+	//- g navagation
+	.menu-wrap.row.bg-red
+		.menu-side
+			+navHeader
+
+
+
+
+	.content-wrap
+		.content.sudo
+
+			//- header
+			header.g-header.bg-red
+				.center
+					h1.g-logo.sprite
+						p
+							a.txt-hide(href="#") Gadget Grave
+
+					button.menu-button#open-button.bg-red
+						span
+
+				.g-header-wrap-right
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
+						span (000) 000-0000
+			//- header !
+
+
+			//- hero
+			.hero.hero-repair.row.bg-red.inner-card
+				.row.center
+					.page-title-header
+						h1 Privacy Policy
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Information about our Organisation and Web site
+								p Modern information and communication technologies play a fundamental role in the activities of an organisation like Gadget Grave . We are based in United States .
+
+								h2 Our principal activities are
+								ul
+									li Cellular Repair
+									li Cellular Sales
+
+								h2 Our privacy policy covers Gadget Grave and its Web sites
+								ul
+									li Organisation Name: Gadget Grave
+									li Address: 4900 Rogers Avenue Suite #103i
+									li City, Zip: Fort Smith , 72903
+									li State: AR
+									li Country: United States
+									li Controller: Cole Thornton
+									li Web Sites(s): www.GadgetGrave.com
+
+
+								h2 Providing Visitors with Anonymous Access
+								p You can access our Web sites home page and browse our sites without disclosing your personal data.
+
+								h2 The services and links of our Web sites
+								p Our Web sites do not enable our visitors to communicate with other visitors or to post information to be accessed by others. Our Web sites do not include links to third party Web service providers.
+
+								h2 Automatic Collection of Information
+								p We do not use cookies on our Web sites. We do not automatically log personal data nor do we link information automatically logged by other means with personal data about specific individuals. We do not collect any personal data from our visitors when they use our services. We do not collect information about our visitors from other sources, such as public records or bodies, or private organisations. To access the table of personal data collected and purposes for which they are used, please click here
+
+								h2 Privacy Compliance
+								p There are no national laws or self-regulatory schemes applicable to our web site or organisation. There are no global or regional regulatory or self-regulatory schemes applicable to our web site or organisation. In order to demonstrate that our privacy policy accords with the above privacy instrument, we are voluntarily committed to a Self Assessment procedure
+
+								h2 Self Assessment procedure
+								ul
+									li Name or designation of the privacy policy person or service	Cole Thornton
+									li URL www.gadgetgrave.com
+									li Address 4900 Rogers avenue suite #103i
+									li Country Unite States
+									li Data Collection and Purpose Specification
+
+								h2 Privacy Support
+								p If you have an enquiry or concern about our privacy policy, please contact
+								ul
+									li Name/designation: Cole Thornton
+									li Department: Sales
+									li Address: 4900 Rogers Avenue Suite #103i
+									li Phone Number: 4794316091
+									li Email address: cole@gadgetgrave.com
+									li URL: www.gadgetgrave.com
+								
+
+
+
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
+
+
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
+
+			//- footer
+			include includes/footer.jade
+
+
+
+script(src='js/classie.js')
+script(src='js/main.js')

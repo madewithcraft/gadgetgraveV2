@@ -1,0 +1,115 @@
+//- data / logic 
+include includes/logic.jade 
+doctype
+html.no-js
+
+
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		include includes/heads/head-home.jade
+
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='style.css')
+
+		link(rel="apple-touch-icon" href="../img/apple-touch-icon.png")
+		link(rel="shortcut icon" type="image/png" href="/favicon.png")
+
+		
+
+	body.home
+		<!--[if lt IE 8]>
+		| p.browsehappy
+		| You are using an <strong>outdated</strong> browser.
+		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		| to improve your experience.
+		<![endif]-->
+
+
+	
+//- start content
+.container.bg-red
+
+	//- g navagation
+	.menu-wrap.row.bg-red
+		.menu-side
+			+navHeader
+
+
+
+
+	.content-wrap
+		.content.sudo
+
+			//- header
+			header.g-header.bg-red
+				.center
+					h1.g-logo.sprite
+						p
+							a.txt-hide(href="#") Gadget Grave
+
+					button.menu-button#open-button.bg-red
+						span
+
+				.g-header-wrap-right
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
+						span (000) 000-0000
+			//- header !
+
+
+			//- hero
+			.hero.hero-repair.row.bg-red.inner-card
+				.row.center
+					.page-title-header
+						h1 Jobs
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Work With Us
+								p We are always on the lookout for bright people who are excited about mobile, game or computer technology. If you are customer focused and have a desire to do things just a little better than the day before contact us below. If you’d like to apply for any position (even if it is not listed)
+								p Prove you can use a computer and send a resume to info@gadgetgrave.com
+								p Be sure to include:  “Resume – title of Position” in the subject line.
+								ul
+									li Job 1
+									li Job 2
+									li Job 3
+								p Do what you love, Love what you do – Join US!
+								
+
+
+
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
+
+
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
+
+			//- footer
+			include includes/footer.jade
+
+
+
+script(src='js/classie.js')
+script(src='js/main.js')

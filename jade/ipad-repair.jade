@@ -1,0 +1,152 @@
+//- data / logic 
+include includes/logic.jade 
+doctype
+html.no-js
+
+
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		include includes/heads/head-home.jade
+
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='style.css')
+
+		link(rel="apple-touch-icon" href="../img/apple-touch-icon.png")
+		link(rel="shortcut icon" type="image/png" href="/favicon.png")
+
+		
+
+	body.home
+		<!--[if lt IE 8]>
+		| p.browsehappy
+		| You are using an <strong>outdated</strong> browser.
+		| Please <a href="http://browsehappy.com/">upgrade your browser</a>
+		| to improve your experience.
+		<![endif]-->
+
+
+	
+//- start content
+.container.bg-red
+
+	//- g navagation
+	.menu-wrap.row.bg-red
+		.menu-side
+			+navHeader
+
+
+
+
+	.content-wrap
+		.content.sudo
+
+			//- header
+			header.g-header.bg-red
+				.center
+					h1.g-logo.sprite
+						p
+							a.txt-hide(href="#") Gadget Grave
+
+					button.menu-button#open-button.bg-red
+						span
+
+				.g-header-wrap-right
+					a#searchTrig.icon.icon-cart(href="#") Search
+					a#phoneTrig.dis-b.g-phone.icon.icon-phone(href="#", tel="#")
+						span (000) 000-0000
+			//- header !
+
+
+			//- hero
+			.hero.hero-repair.row.bg-red.inner-card
+				.row.center
+					.page-title-header
+						h1 iPad Repair
+				.wrap-center.card
+					.wrap-txt.slab-layout-left
+						h2 We are Fort Smith, Arkansas’ iPad specialists!
+						p Your iPad is a beautiful piece of technology. It can do just about anything: connect you to friends and family, keep you entertained with games and movies, and more. And when your iPad needs repair, you want it fixed – and quickly. Gadget Grave is qualified to repair iPads when the screen breaks, LCD cracks, has charging issues, and more!  If you have a broken glass, broken LCD, or the iPad won’t power up, bring it to the professionals!
+
+					.slab-layout-right
+						.slab-img.sudo
+			//- hero !
+
+
+			.row.bg-grey
+				.center
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 Fast Reliable and Same Day
+						p AWe keep most of these parts in stock and are able to repair most iPads the same day they are dropped off! Some of the most common repairs we see are the Broken Lens and Broken Screen. We have both white and black glass in stock to get you fixed up! We work on all models of the iPad including the iPad Air and iPad mini.
+
+
+
+
+
+			.row.bg-purp.slab.index-slab-gg-box
+				.center
+					.slab-layout-right
+						h2  iPad Repair Service
+						p With the iPad becoming the most popular mobile tablet offered to date and the new models such as the Air and Mini being released in 2013, their popularity will only continue to grow. With this increase in popularity and dependence on popular tablets, the need for effective and affordable repair techniques continues to grow. Like the iPhone, the iPad has a touchscreen display made of glass that covers a colorful LCD display. These glass displays are fragile and can be broken fairly easily through either impact or pressure. Gadget Grave iPad repair services cover a wide array of possible problems that your device may have. The displays are not the only repairs that our technicians perform.  We also see hardware problems such as wifi antennas, buttons not pushing, not taking a charge and headphone jacks. Our Pros can perform iPad repair on all models and typically have replacement parts available to replace any components that may be malfunctioning.
+					
+					.slab-layout-left.sudo.gg-cell-box
+
+			
+
+
+
+			.row.bg-grey
+				.center
+					.wrap-img.fl-center
+					.wrap-txt.fl-center.txt-center.max-600
+						h2 Over the Phone Queotes
+						p The iPad, much like the iPod Touch, has a touchscreen that fits perfectly into the aluminum housing. The housing of often time damaged when you drop your device. We have to reshape the housing as best as possible. Like all metal, once it is bent, it is near impossible to bend it back perfectly. If the housing is not able to be bent back perfectly, then the glass will not sit in the frame correctly and is much more likely to break.
+						p By using the highest quality replacement parts available, Gadget Grave promises to give you the best iPad repair possible. We stock parts for almost every iPad as well as the iPad Mini. Because we have the parts, most iPad repairs are done the same day. If we have to order the parts, we can still usually have it repaired in 2-3 business days.
+
+
+						h2.number-header (479) 431-6091
+
+
+
+			//- three tout gird
+			.row.row-kill-pad.bg-grey.inner-card
+
+				//- the right and the left pretain to the txt pos
+				.wrap-center.third-grid
+					.two-thirds.column
+						.card 
+							.txt-wrap
+								h2 Is your Cell Phone Broken?
+								p We have all of the most common repair parts in stock and it usually only take a couple of hours to finish the repair. This makes it easier to avoid a lot of those “2-4 business days” situations just to fix the broken glass on your mobile phone.
+						.card 
+							.txt-wrap
+								h2 The importance of having your cell phone.
+								p To most of us, the cell phone is just as important as your wallet or car keys. During the repair, our automated Customer Relations Management Software has the ability to email, text, and call you throughout the repair to keep you updated.
+
+
+					//- savings tout
+					.one-third.column
+						.card.bg-green
+							.txt-wrap.warranty-box.txt-center
+								span.w-first 90
+								p.w-second day warranty
+								p All phone repairs come with our hassle-free 90 day warranty. Because our warranty covers part defects, if the part should stop functioning properly, we will repair it again at no additional cost for you.
+								span.icon.icon-warranty
+								p.w-footer excludes user abuse and user damage
+
+
+
+			//- three tout gird !
+
+			//- location
+			include includes/location.jade
+
+			//- footer
+			include includes/footer.jade
+
+
+
+script(src='js/classie.js')
+script(src='js/main.js')
